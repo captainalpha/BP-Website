@@ -18,7 +18,7 @@ export default async (req, res) => {
     secure: true,
     auth: {
       user: "inquiry@bpaassolutions.com",
-      pass: "Bpass@12345",
+      pass: "Bpass@123",
     },
   });
 
