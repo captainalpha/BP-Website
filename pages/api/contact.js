@@ -13,7 +13,7 @@ export default async (req, res) => {
     type,
   } = req.body;
   const transporter = nodemailer.createTransport({
-    host: "us2.smtp.mailhostbox.com",
+    host: "smtpout.secureserver.net",
     port: 465,
     secure: true,
     auth: {
