@@ -13,12 +13,12 @@ export default async (req, res) => {
     type,
   } = req.body;
   const transporter = nodemailer.createTransport({
-    host: "smtpout.secureserver.net",
-    port: 465,
+    host: "us2.smtp.mailhostbox.com",
+    port: 587,
     secure: true,
     auth: {
       user: "inquiry@bpaassolutions.com",
-      pass: "Bpaas@123",
+      pass: "Bpass@12345",
     },
   });
 
