@@ -81,7 +81,7 @@ function Clients() {
         {/* <hr className="pb-2 pt-0 rounded-4xl border-t-4 w-3/5 m-auto" /> */}
         <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 items-center justify-items-center w-full justify-center py-6 pb-20 bg-slate-200">
           <div className="w-full h-full flex items-center justify-center">
-            <a href="https://newgensoft.com" target="_blank"  title="Low Code Digital Transformation Platform"><img src="/img/logo1.png" alt="Low Code Digital Transformation Platform" title="Low Code Digital Transformation Platform" /></a>
+            <a href="https://newgensoft.com" target="_blank" title="Low Code Digital Transformation Platform"><img src="/img/logo1.png" alt="Low Code Digital Transformation Platform" title="Low Code Digital Transformation Platform" /></a>
           </div>
           <div className="w-full h-full flex items-center justify-center">
             <img src="/img/logo2.png" />
