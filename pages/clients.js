@@ -78,10 +78,64 @@ function Clients() {
             automation.
           </p>
         </div>
-        {/* <hr className="pb-2 pt-0 rounded-4xl border-t-4 w-3/5 m-auto" /> */}
-        <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 items-center justify-items-center w-full justify-center py-6 pb-20 bg-slate-200">
+
+
+
+
+        <div className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 items-center justify-items-center w-full justify-center py-10 gap-5">
+          <img src="/images/clientsLogo/WonderCement.png" alt=""
+            className="shadow-lg w-[80%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+
+          <img src="/images/clientsLogo/volvo.jpg" alt=""
+            className="shadow-lg w-[80%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+
+          <img src="/images/clientsLogo/Rubamin.webp" alt=""
+            className="shadow-lg w-[80%] object-contain mix-blend-color-burn bg-sky-600 rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+
+
+          <img src="/images/clientsLogo/experion.png" alt=""
+            className="shadow-lg w-[80%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+
+          <img src="/images/clientsLogo/EcomLogo.svg" alt=""
+            className="shadow-lg w-[80%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+
+          <img src="/images/clientsLogo/GDL.png" alt=""
+            className="shadow-lg w-[80%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+
+          <img src="/images/clientsLogo/AGSINs.svg" alt=""
+            className="shadow-lg w-[80%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+
+          <img src="/images/clientsLogo/Apollotubes.png" alt=""
+            className="shadow-lg w-[80%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+
+          <img src="/images/clientsLogo/NivaBupa.svg" alt=""
+            className="shadow-lg w-[80%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+
+          <img src="/images/clientsLogo/o2power.png" alt=""
+            className="shadow-lg w-[80%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+
+          <img src="/images/clientsLogo/awipl.png" alt=""
+            className="shadow-lg w-[80%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+
+          <img src="/images/clientsLogo/ForbesMarshall.png" alt=""
+            className="shadow-lg w-[80%] object-contain mix-blend-color-burn bg-sky-600 rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+
+          <img src="/images/clientsLogo/ASAHI.webp" alt=""
+            className="shadow-lg w-[80%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+
+          <img src="/images/clientsLogo/usha.png" alt=""
+            className="shadow-lg w-[80%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+
+          <img src="/images/clientsLogo/AGPratham.png" alt=""
+            className="shadow-lg w-[80%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+
+        </div>
+
+
+
+        {/* <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 items-center justify-items-center w-full justify-center py-6 pb-20 bg-slate-200">
           <div className="w-full h-full flex items-center justify-center">
-            <a href="https://newgensoft.com" title="Low Code Digital Transformation Platform"><img src="/img/logo1.png" alt="Low Code Digital Transformation Platform" title="Low Code Digital Transformation Platform" /></a>
+            <a href="https://newgensoft.com" target="_blank" title="Low Code Digital Transformation Platform"><img src="/img/logo1.png" alt="Low Code Digital Transformation Platform" title="Low Code Digital Transformation Platform" /></a>
           </div>
           <div className="w-full h-full flex items-center justify-center">
             <img src="/img/logo2.png" />
@@ -194,7 +248,7 @@ function Clients() {
           <div className="w-full h-full flex items-center justify-center">
             <img src="/img/logo38.png" />
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

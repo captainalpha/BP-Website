@@ -46,6 +46,22 @@ import logo35 from "../assets/logo35.png";
 import logo36 from "../assets/logo36.png";
 import logo37 from "../assets/logo37.png";
 
+import logo40 from "../assets/ClientImage/WonderCement.png";
+import logo41 from "../assets/ClientImage/volvo.jpg";
+import logo42 from "../assets/ClientImage/Rubamin.webp";
+import logo43 from "../assets/ClientImage/ForbesMarshall.png";
+import logo44 from "../assets/ClientImage/experion.png";
+import logo45 from "../assets/ClientImage/EcomLogo.svg";
+import logo46 from "../assets/ClientImage/GDL.png";
+import logo47 from "../assets/ClientImage/AGSINs.svg";
+import logo48 from "../assets/ClientImage/Apollotubes.png";
+import logo49 from "../assets/ClientImage/NivaBupa.svg";
+import logo50 from "../assets/ClientImage/awipl.png";
+import logo51 from "../assets/ClientImage/ASAHI.webp";
+import logo52 from "../assets/ClientImage/usha.png";
+import logo53 from "../assets/ClientImage/AGPratham.png";
+import logo54 from "../assets/ClientImage/o2power.png";
+
 import TestimonialBg from "../assets/TestimonialBg.png";
 import TestimonialImg from "../assets/TestimonialImage.png";
 // import shoppingBag from ".."
@@ -75,7 +91,7 @@ export default function Home() {
     infinite: true,
     speed: 5000,
     centerMode: false,
-    slidesToShow: 5,
+    slidesToShow: 7,
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: false,
@@ -120,7 +136,7 @@ export default function Home() {
     infinite: true,
     speed: 5000,
     centerMode: false,
-    slidesToShow: 5,
+    slidesToShow: 7,
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: false,
@@ -308,7 +324,7 @@ export default function Home() {
                 </svg>
               }
               className="group"
-              // icon={shoppingBag}
+            // icon={shoppingBag}
             />
 
             <ServiceCard
@@ -496,46 +512,77 @@ export default function Home() {
           discription="We have joined hands with many to raise the development bars with automation."
         />
         <Slider {...settings} className="w-[98%] mx-auto">
-          <Image src={logo1} alt="" />
-          <Image src={logo2} alt="" />
-          <Image src={logo3} alt="" />
-          <Image src={logo4} alt="" />
-          <Image src={logo5} alt="" />
-          <Image src={logo6} alt="" />
-          <Image src={logo7} alt="" />
-          <Image src={logo8} alt="" />
-          <Image src={logo9} alt="" />
-          <Image src={logo10} alt="" />
-          <Image src={logo11} alt="" />
-          <Image src={logo12} alt="" />
-          <Image src={logo13} alt="" />
-          <Image src={logo14} alt="" />
-          <Image src={logo15} alt="" />
-          <Image src={logo16} alt="" />
-          <Image src={logo17} alt="" />
-          <Image src={logo18} alt="" />
-          <Image src={logo19} alt="" />
+          <div className="w-[98%]">
+            <img src="/images/clientsLogo/WonderCement.png" alt=""
+              className="shadow-lg w-[90%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+          </div>
+          <div className="w-[98%]">
+            <img src="/images/clientsLogo/AGPratham.png" alt=""
+              className="shadow-lg w-[90%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+          </div>
+          <div className="w-[98%]">
+            <img src="/images/clientsLogo/volvo.jpg" alt=""
+              className="shadow-lg w-[90%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+          </div>
+
+          <div className="w-[98%]">
+            <img src="/images/clientsLogo/Rubamin.webp" alt=""
+              className="shadow-lg w-[90%] object-contain mix-blend-color-burn bg-sky-600 rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+          </div>
+
+          <div className="w-[98%]">
+            <img src="/images/clientsLogo/experion.png" alt=""
+              className="shadow-lg w-[90%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+          </div>
+
+          <div className="w-[98%]">
+            <img src="/images/clientsLogo/EcomLogo.svg" alt=""
+              className="shadow-lg w-[90%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+          </div>
+
+          <div className="w-[98%]">
+            <img src="/images/clientsLogo/GDL.png" alt=""
+              className="shadow-lg w-[90%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+          </div>
+          <div className="w-[98%]">
+            <img src="/images/clientsLogo/AGSINs.svg" alt=""
+              className="shadow-lg w-[90%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+          </div>
+         
         </Slider>
         <Slider rtl {...settingsnew} className="w-[98%] mx-auto">
-          <Image src={logo19} alt="" />
-          <Image src={logo20} alt="" />
-          <Image src={logo21} alt="" />
-          <Image src={logo22} alt="" />
-          <Image src={logo23} alt="" />
-          <Image src={logo24} alt="" />
-          <Image src={logo25} alt="" />
-          <Image src={logo26} alt="" />
-          <Image src={logo27} alt="" />
-          <Image src={logo28} alt="" />
-          <Image src={logo29} alt="" />
-          <Image src={logo30} alt="" />
-          <Image src={logo31} alt="" />
-          <Image src={logo32} alt="" />
-          <Image src={logo33} alt="" />
-          <Image src={logo34} alt="" />
-          <Image src={logo35} alt="" />
-          <Image src={logo36} alt="" />
-          <Image src={logo37} alt="" />
+        <div className="w-[98%]">
+            <img src="/images/clientsLogo/Apollotubes.png" alt=""
+              className="shadow-lg w-[90%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+          </div>
+          <div className="w-[98%]">
+            <img src="/images/clientsLogo/NivaBupa.svg" alt=""
+              className="shadow-lg w-[90%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+          </div>
+          <div className="w-[98%]">
+            <img src="/images/clientsLogo/o2power.png" alt=""
+              className="shadow-lg w-[90%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+          </div>
+          <div className="w-[98%]">
+            <img src="/images/clientsLogo/awipl.png" alt=""
+              className="shadow-lg w-[90%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+          </div>
+          <div className="w-[98%]">
+            <img src="/images/clientsLogo/ForbesMarshall.png" alt=""
+              className="shadow-lg w-[90%] object-contain mix-blend-color-burn bg-sky-600 rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+          </div>
+          <div className="w-[98%]">
+            <img src="/images/clientsLogo/ASAHI.webp" alt=""
+              className="shadow-lg w-[90%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+          </div>
+          <div className="w-[98%]">
+            <img src="/images/clientsLogo/usha.png" alt=""
+              className="shadow-lg w-[90%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+          </div>
+          <div className="w-[98%]">
+            <img src="/images/clientsLogo/AGPratham.png" alt=""
+              className="shadow-lg w-[90%] object-contain mix-blend-color-burn bg-white rounded-md py-[2px] px-[10px] custom-aspect-ratio" />
+          </div>
         </Slider>
 
         <div>
