@@ -6,7 +6,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+
+
 import { motion, AnimatePresence } from "framer-motion";
+import CookiesMain from "../components/common/CookiesMain";
 
 // import styles from './slider.module.scss'
 function MyApp({ Component, pageProps, router }) {
@@ -32,6 +35,7 @@ function MyApp({ Component, pageProps, router }) {
             id="page-transition-container"
           >
             <Component {...pageProps} /> <Footer />{" "}
+            <CookiesMain/>
           </motion.div>
         </div>
       </AnimatePresence>
