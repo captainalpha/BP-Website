@@ -25,9 +25,8 @@ function NavLink({ to, children }) {
 function MobileNav({ open, setOpen }) {
   return (
     <div
-      className={`absolute z-50 top-0 left-0 h-screen overflow-y-scroll  w-screen bg-white transform ${
-        open ? "-translate-x-0" : "-translate-x-full"
-      } transition-transform duration-300 ease-in-out filter drop-shadow-md `}
+      className={`absolute z-50 top-0 left-0 h-screen overflow-y-scroll  w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"
+        } transition-transform duration-300 ease-in-out filter drop-shadow-md `}
     >
       <Link passHref href={"/"}>
         <div
@@ -52,9 +51,8 @@ function MobileNav({ open, setOpen }) {
               <Disclosure.Button className="flex w-full text-gray justify-between py-2 text-left text-xl font-medium hover:bg-blue-200 focus:outline-none focus-visible:ring focus-visible:ring-blue-500 focus-visible:ring-opacity-75">
                 <span>Solutions</span>
                 <ChevronUpIcon
-                  className={`${
-                    open ? "rotate-180 transform" : ""
-                  } h-5 w-5 text-purple-500`}
+                  className={`${open ? "rotate-180 transform" : ""
+                    } h-5 w-5 text-purple-500`}
                 />
               </Disclosure.Button>
               <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm bg-blue-100 text-gray-500">
@@ -154,9 +152,8 @@ function MobileNav({ open, setOpen }) {
               <Disclosure.Button className="flex w-full text-gray justify-between py-2 text-left text-xl font-medium hover:bg-blue-200 focus:outline-none focus-visible:ring focus-visible:ring-blue-500 focus-visible:ring-opacity-75">
                 <span>Our Services</span>
                 <ChevronUpIcon
-                  className={`${
-                    open ? "rotate-180 transform" : ""
-                  } h-5 w-5 text-purple-500`}
+                  className={`${open ? "rotate-180 transform" : ""
+                    } h-5 w-5 text-purple-500`}
                 />
               </Disclosure.Button>
               <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm bg-blue-100 text-gray-500">
@@ -175,7 +172,7 @@ function MobileNav({ open, setOpen }) {
                       </a>
                     </Link>
                   </li>
-                  <li className="border border-b-gray-300">
+                  {/* <li className="border border-b-gray-300">
                     <Link passHref href="/services/bpm-rpa-implementation">
                       <a
                         className="text-xl font-normal my-4"
@@ -186,6 +183,20 @@ function MobileNav({ open, setOpen }) {
                         }
                       >
                         BPM/RPA Implementation
+                      </a>
+                    </Link>
+                  </li> */}
+                   <li className="border border-b-gray-300">
+                    <Link passHref href="/services/newgen-training">
+                      <a
+                        className="text-xl font-normal my-4"
+                        onClick={() =>
+                          setTimeout(() => {
+                            setOpen(!open);
+                          }, 100)
+                        }
+                      >
+                        Newgen
                       </a>
                     </Link>
                   </li>
@@ -208,6 +219,71 @@ function MobileNav({ open, setOpen }) {
             </>
           )}
         </Disclosure>
+
+        {/* OEM Practice */}
+        {/* <Disclosure as="div" className="mt-2">
+          {({ open }) => (
+            <>
+              <Disclosure.Button className="flex w-full text-gray justify-between py-2 text-left text-xl font-medium hover:bg-blue-200 focus:outline-none focus-visible:ring focus-visible:ring-blue-500 focus-visible:ring-opacity-75">
+                <span>OEM Practice</span>
+                <ChevronUpIcon
+                  className={`${open ? "rotate-180 transform" : ""
+                    } h-5 w-5 text-purple-500`}
+                />
+              </Disclosure.Button>
+              <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm bg-blue-100 text-gray-500">
+                <ul className="list list-disc list-inside space-y-3 text-lg text-black">
+                  <li className="border border-b-gray-300">
+                    <Link passHref href="/services/newgen-training">
+                      <a
+                        className="text-xl font-normal my-4"
+                        onClick={() =>
+                          setTimeout(() => {
+                            setOpen(!open);
+                          }, 100)
+                        }
+                      >
+                        Newgen
+                      </a>
+                    </Link>
+                  </li>
+                  <li className="border border-b-gray-300">
+                    <Link passHref href="#">
+                      <a
+                        className="text-xl font-normal my-4"
+                        onClick={() =>
+                          setTimeout(() => {
+                            setOpen(!open);
+                          }, 100)
+                        }
+                      >
+                        Oracle
+                      </a>
+                    </Link>
+                  </li>
+                  <li className="border border-b-gray-300">
+                    <Link passHref href="#">
+                      <a
+                        className="text-xl font-normal my-4"
+                        onClick={() =>
+                          setTimeout(() => {
+                            setOpen(!open);
+                          }, 100)
+                        }
+                      >
+                         Mendix
+                      </a>
+                    </Link>
+                  </li>
+                </ul>
+              </Disclosure.Panel>
+            </>
+          )}
+        </Disclosure> */}
+        {/* OEM Practice */}
+
+
+
         <Link passHref href="/clients">
           <a
             className="text-xl font-medium my-4"
@@ -300,25 +376,22 @@ export default function Navbar() {
           >
             {/* hamburger button */}
             <span
-              className={`h-1 w-full  rounded-lg transform transition duration-300 ease-in-out ${
-                open ? "rotate-45 translate-y-[11px] bg-orange" : "bg-secondary"
-              }`}
+              className={`h-1 w-full  rounded-lg transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-[11px] bg-orange" : "bg-secondary"
+                }`}
             />
             <span
-              className={`h-1 w-full bg-secondary rounded-lg transition-all duration-300 ease-in-out ${
-                open ? "w-0" : "w-full"
-              }`}
+              className={`h-1 w-full bg-secondary rounded-lg transition-all duration-300 ease-in-out ${open ? "w-0" : "w-full"
+                }`}
             />
             <span
-              className={`h-1 w-full  rounded-lg transform transition duration-300 ease-in-out ${
-                open
+              className={`h-1 w-full  rounded-lg transform transition duration-300 ease-in-out ${open
                   ? "-rotate-45 -translate-y-[11px]  bg-orange"
                   : "bg-secondary"
-              }`}
+                }`}
             />
           </div>
 
-          <div className="hidden lg:flex space-x-8 p-12 ">
+          <div className="hidden lg:flex space-x-5 p-0">
             <div className="relative group duration-1000 transition  ">
               <NavLink to="/solutions">Solutions</NavLink>
               <div className="hidden p-10 top-0 -left-20 hover:flex group-hover:flex transition absolute  hover:opacity-100 opacity-0 duration-[2000ms] group-hover:opacity-100 peer-hover:opacity-100  md:min-w-[70vw] lg:min-w-[80vw] -translate-y-10 hover:translate-y-0">
@@ -577,8 +650,11 @@ export default function Navbar() {
                   <NavLink to="/services/custom-development">
                     Custom Development
                   </NavLink>
-                  <NavLink to="/services/bpm-rpa-implementation">
+                  {/* <NavLink to="/services/bpm-rpa-implementation">
                     BPM/RPA Implementation
+                  </NavLink> */}
+                  <NavLink to="/services/newgen-training">
+                  Newgen
                   </NavLink>
                   <NavLink to="/services/resource-augmentation">
                     Resource Augmentation
@@ -586,6 +662,30 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
+
+            {/* <div className="relative cursor-pointer group duration-1000 transition">
+              <NavLink className="relative">
+                OEM Practice
+                <div className="absolute inline-flex items-center justify-center w-3 h-3 text-xs font-bold text-white bg-red-500 border-2 
+                border-white rounded-lg  -right-2 dark:border-gray-900"></div>
+
+              </NavLink>
+              <div className="hidden p-5 top-5 bg-white -left-5 hover:flex group-hover:flex transition absolute opacity-0 duration-1000 group-hover:opacity-100 peer-hover:opacity-100  md:min-w-[250px] lg:min-w-[250px]">
+                <div className=" grid gap-3">
+                  <NavLink to="/services/newgen-training">
+                    Newgen
+                  </NavLink>
+                  <NavLink to="#">
+                    Oracle
+                  </NavLink>
+                  <NavLink to="#">
+                    Mendix
+                  </NavLink>
+                </div>
+              </div>
+            </div> */}
+
+
             <NavLink to="/clients">Clients</NavLink>
             <NavLink to="/become-partner">Become BPAAS Partner</NavLink>
             <NavLink to="/about-us">Company</NavLink>
