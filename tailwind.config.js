@@ -5,6 +5,31 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        modalOpen: {
+          '0%': { transform: 'scale(0)', opacity: 0 },
+          '100%': { transform: 'scale(1)', opacity: 1 },
+        },
+        modalClose: {
+          '0%': { transform: 'scale(1)', opacity: 1 },
+          
+        },
+        fragmentIn: {
+          '0%': { opacity: 0, transform: 'translate(-50px, -50px)' },
+          '100%': { opacity: 1, transform: 'translate(0, 0)' },
+        },
+        fragmentOut: {
+          '0%': { opacity: 1, transform: 'translate(0, 0)' },
+          '100%': { opacity: 0, transform: 'translate(50px, 50px)' },
+        },
+        
+      },
+      animation: {
+        modalOpen: 'modalOpen 0.5s ease-out forwards',
+        modalClose: 'modalClose 0.5s ease-in forwards',
+        fragmentIn: 'fragmentIn 0.5s ease-out forwards',
+        fragmentOut: 'fragmentOut 0.5s ease-in forwards',
+      },
       backgroundImage: {
         "testimonial-bg": "url('/img/hero-pattern.svg')",
         "testimonial-bgs": "url('/')",
