@@ -59,3 +59,44 @@
     display: none;
   }
 }
+
+
+
+
+/*OEM Modal */
+@layer utilities {
+  @keyframes modalOpen {
+    0% {
+      clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+      opacity: 0;
+    }
+    100% {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      opacity: 1;
+    }
+  }
+
+  @keyframes modalClose {
+    0% {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      opacity: 1;
+    }
+    100% {
+      clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+      opacity: 0;
+    }
+  }
+
+  .animate-modalOpen {
+    animation: modalOpen 0.5s forwards;
+  }
+
+  .animate-modalClose {
+    animation: modalClose 0.5s forwards;
+  }
+
+  .custom-aspect-ratio {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    aspect-ratio: 3 / 2;
+  }
+}

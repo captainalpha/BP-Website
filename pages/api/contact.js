@@ -13,11 +13,11 @@ export default async (req, res) => {
     type,
   } = req.body;
   const transporter = nodemailer.createTransport({
-    host: "smtpout.secureserver.net",
+    host: "smtp.rediffmailpro.com",
     port: 465,
     secure: true,
     auth: {
-      user: "inquiry@bpaassolutions.com",
+      user: "enquiry@bpaassolutions.com",
       pass: "Bpaas@123",
     },
   });
@@ -25,7 +25,7 @@ export default async (req, res) => {
   try {
     await transporter.sendMail({
       from: email,
-      to: "inquiry@bpaassolutions.com",
+      to: "enquiry@bpaassolutions.com",
       // to: "aditi@bizzeonline.com",
       subject: `${subject ? subject : `New Mail from ${type}`}`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
