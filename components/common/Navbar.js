@@ -100,7 +100,20 @@ function MobileNav({ open, setOpen }) {
                     </Link>
                   </li>
                   <li className="border border-b-gray-300">
-                    <Link passHref href="/solutions/bpaas-smartex">
+                  {/* <Link passHref href="/solutions/bpaas-smartex"> */}
+                      <a
+                      href="https://metasolve.io/" target="_blank" rel="noReferrer"
+                        className="text-xl font-normal my-4"
+                        onClick={() =>
+                          setTimeout(() => {
+                            setOpen(!open);
+                          }, 100)
+                        }
+                      >
+                        BPAAS MetaEx
+                      </a>
+                    {/* </Link> */}
+                    {/* <Link passHref href="/solutions/bpaas-smartex">
                       <a
                         className="text-xl font-normal my-4"
                         onClick={() =>
@@ -111,7 +124,7 @@ function MobileNav({ open, setOpen }) {
                       >
                         BPAAS SmartEx
                       </a>
-                    </Link>
+                    </Link> */}
                   </li>
                   <li className="border border-b-gray-300">
                     <Link passHref href="/solutions/bpaas-invoicer">
@@ -578,24 +591,31 @@ export default function Navbar() {
                           : " hover:text-orange text-lg font-bold"
                       }
                     >
-                      BPAAS SmartEx
+                       <a href="https://metasolve.io/" target="_blank" rel="noReferrer" 
+                        >
+                        {/* BPAAS SmartEx */}
+                        BPAAS MetaEx
+                    </a>
                     </h1>
-                    {/* <Link href="/solutions/bpaas-smartex"> */}
                     <a
-                      href="/solutions/bpaas-smartex"
+                      href="https://metasolve.io/" target="_blank" rel="noReferrer" 
                       className="hover:text-orange text-primaryText"
                     >
                       AI Based Extraction Engine
                     </a>
-                    {/* </Link> */}
-                    {/* <Link href="/solutions/bpaas-smartex"> */}
-                    <a
+                    {/* <a
+                      href="/solutions/bpaas-smartex"
+                      className="hover:text-orange text-primaryText"
+                    >
+                      AI Based Extraction Engine
+                    </a> */}
+                   
+                    {/* <a
                       href="/solutions/bpaas-smartex"
                       className="hover:text-orange text-primaryText"
                     >
                       Open Integration Platform
-                    </a>
-                    {/* </Link> */}
+                    </a> */}
                   </div>
                   <div className=" grid space-y-2">
                     <h1
