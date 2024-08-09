@@ -106,11 +106,15 @@ export default function Footer() {
                     BPAAS Vendora
                   </a>
                 </Link>
-                <Link passHref href="/solutions/bpaas-smartex">
+                {/* <Link passHref href="/solutions/bpaas-smartex">
                   <a className="block  text-sm  hover:underline hover:text-orange">
                     BPAAS SmartEx
                   </a>
-                </Link>
+                </Link> */}
+                <a className="block  text-sm  hover:underline hover:text-orange"
+                href="https://metasolve.io/" target="_blank" rel="noreferrer">
+                    BPAAS MetaEx
+                  </a>
                 <Link passHref href="/solutions/bpaas-pospro">
                   <a className="block  text-sm  hover:underline hover:text-orange">
                     BPAAS PosPro
