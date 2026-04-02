@@ -364,8 +364,8 @@ function BpServices() {
               <br />
               <b>Address :</b>
               <br />
-              BPAAS Solutions Private Limited, Unit number 601 & 602, Vipul
-              Square, Sushant Lok Phase 1, Gurugram, Haryana 1220092
+              BPAAS Solutions Pvt. Ltd., Vipul Square, Unit No. 608 & 609, 
+                  Sushant Lok Phase I, Gurugram, Haryana 122009
             </p>
           </div>
         </div>

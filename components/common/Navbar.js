@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import logo from "../../assets/logo_1.svg";
 
 function NavLink({ to, children }) {
   const router = useRouter();
@@ -28,19 +29,21 @@ function MobileNav({ open, setOpen }) {
       className={`absolute z-50 top-0 left-0 h-screen overflow-y-scroll  w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out filter drop-shadow-md `}
     >
-      <Link passHref href={"/"}>
+      <Link href="/">
         <div
-          onClick={() =>
+          onClick={() => {
             setTimeout(() => {
               setOpen(!open);
-            }, 100)
-          }
-          className="flex items-center hover:cursor-pointer  justify-start  p-4 filter drop-shadow-md bg-white h-20"
+            }, 100);
+          }}
+          className="flex items-center justify-start p-4 bg-white h-20 cursor-pointer drop-shadow-md lg:w-[18%]"
         >
           <Image
-            className="h-16"
-            alt=""
-            src={require("../../assets/bpass-logo.svg")}
+            src={logo}
+            alt="logo"
+            width={170}
+            height={170}
+            priority
           />
         </div>
       </Link>
@@ -100,18 +103,18 @@ function MobileNav({ open, setOpen }) {
                     </Link>
                   </li>
                   <li className="border border-b-gray-300">
-                  {/* <Link passHref href="/solutions/bpaas-smartex"> */}
-                      <a
+                    {/* <Link passHref href="/solutions/bpaas-smartex"> */}
+                    <a
                       href="https://metasolve.io/" target="_blank" rel="noReferrer"
-                        className="text-xl font-normal my-4"
-                        onClick={() =>
-                          setTimeout(() => {
-                            setOpen(!open);
-                          }, 100)
-                        }
-                      >
-                        BPAAS MetaEx
-                      </a>
+                      className="text-xl font-normal my-4"
+                      onClick={() =>
+                        setTimeout(() => {
+                          setOpen(!open);
+                        }, 100)
+                      }
+                    >
+                      BPAAS MetaEx
+                    </a>
                     {/* </Link> */}
                     {/* <Link passHref href="/solutions/bpaas-smartex">
                       <a
@@ -199,7 +202,7 @@ function MobileNav({ open, setOpen }) {
                       </a>
                     </Link>
                   </li> */}
-                   <li className="border border-b-gray-300">
+                  <li className="border border-b-gray-300">
                     <Link passHref href="/services/newgen-training">
                       <a
                         className="text-xl font-normal my-4"
@@ -376,8 +379,8 @@ export default function Navbar() {
       <nav className="flex fixed top-0 left-0 right-0 filter drop-shadow-md bg-white z-50  lg:px-10  md:px-8 px-4 py-0 h-20 items-center justify-between">
         <MobileNav open={open} setOpen={setOpen} />
         <Link passHref href={"/"}>
-          <div className="lg:w-3/12 flex items-center hover:cursor-pointer">
-            <Image alt="" src={require("../../assets/bpass-logo.svg")} />
+          <div className="lg:w-[12%] flex items-center hover:cursor-pointer">
+            <Image alt="" src={logo} width={170} height={170} />
           </div>
         </Link>
         <div className="w-9/12 flex lg:justify-between relative justify-end items-center">
@@ -398,8 +401,8 @@ export default function Navbar() {
             />
             <span
               className={`h-1 w-full  rounded-lg transform transition duration-300 ease-in-out ${open
-                  ? "-rotate-45 -translate-y-[11px]  bg-orange"
-                  : "bg-secondary"
+                ? "-rotate-45 -translate-y-[11px]  bg-orange"
+                : "bg-secondary"
                 }`}
             />
           </div>
@@ -591,14 +594,14 @@ export default function Navbar() {
                           : " hover:text-orange text-lg font-bold"
                       }
                     >
-                       <a href="https://metasolve.io/" target="_blank" rel="noReferrer" 
-                        >
+                      <a href="https://metasolve.io/" target="_blank" rel="noReferrer"
+                      >
                         {/* BPAAS SmartEx */}
                         BPAAS MetaEx
-                    </a>
+                      </a>
                     </h1>
                     <a
-                      href="https://metasolve.io/" target="_blank" rel="noReferrer" 
+                      href="https://metasolve.io/" target="_blank" rel="noReferrer"
                       className="hover:text-orange text-primaryText"
                     >
                       AI Based Extraction Engine
@@ -609,7 +612,7 @@ export default function Navbar() {
                     >
                       AI Based Extraction Engine
                     </a> */}
-                   
+
                     {/* <a
                       href="/solutions/bpaas-smartex"
                       className="hover:text-orange text-primaryText"
@@ -674,7 +677,7 @@ export default function Navbar() {
                     BPM/RPA Implementation
                   </NavLink> */}
                   <NavLink to="/services/newgen-training">
-                  Newgen
+                    Newgen
                   </NavLink>
                   <NavLink to="/services/resource-augmentation">
                     Resource Augmentation

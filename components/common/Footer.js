@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import logoWhite from "../../assets/logowhite_1.svg";
 
 export default function Footer() {
   return (
@@ -7,19 +8,28 @@ export default function Footer() {
       <div className="  py-10 ">
         <div className="lg:grid lg:grid-cols-9 gap-5">
           <div className="w-full  lg:col-span-3">
-            <div className=" space-y-3">
-              <div className="">
-                <Image
+            <div className="space-y-3">
+              {/* <Image
                   alt=""
                   src={require("../../assets/bpass-logo-white.svg")}
+                  width={170}
+                  height={170}
+                  
+                /> */}
+              <div className="space-y-3">
+                <Image
+                  src={logoWhite}
+                  alt="logo"
+                  width={170}
+                  height={170}
+                  priority
                 />
+                <p className="max-w-sm mt-4">
+                  We are your IT consulting partner to accelerate your company’s
+                  growth and success graphs. BPAAS creates a secure and
+                  simple-to-access channel.
+                </p>
               </div>
-
-              <p className="max-w-sm mt-4 ">
-                We are your IT consulting partner to accelerate your company’s
-                growth and success graphs. BPAAS creates a secure and
-                simple-to-access channel.
-              </p>
 
               <div className="flex mt-4 ">
                 <a
@@ -158,8 +168,8 @@ export default function Footer() {
                   +91-7503264677
                 </span>
                 <span className="block  text-[13px]  hover:underline hover:text-orange">
-                  BPAAS Solutions Private Limited, Unit number 601 & 602, Vipul
-                  Square Sushant Lok Phase 1, Gurugram, Haryana 122009
+                  BPAAS Solutions Pvt. Ltd., Vipul Square, Unit No. 608 & 609,
+                  Sushant Lok Phase I, Gurugram, Haryana 122009
                 </span>
                 <input
                   className="block p-1 outline-none border text-black w-full"
@@ -184,7 +194,7 @@ export default function Footer() {
         <div>
           <Link passHref href="/services/bp-services">
             <a className="block  text-sm  hover:underline hover:text-orange">
-            Privacy Policy
+              Privacy Policy
             </a>
           </Link>
         </div>
