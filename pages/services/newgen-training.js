@@ -6,6 +6,7 @@ import OEMCapabilitiesStudies from "../../components/common/OEMCapabilitiesStudi
 import ContactUs from "../../components/common/ContactUs";
 import OEMVendoraOnboarding from "../../components/common/OEMVendoraOnboarding";
 import ClientsSlider from "../../components/common/ClientsSlider";
+import MasterDataManagement from "../../components/common/MasterDataManagement";
 
 function nTraining() {
   return (
@@ -42,6 +43,7 @@ function nTraining() {
         </div>
         <OEMCapabilitiesStudies />
         <OEMVendoraOnboarding />
+        <MasterDataManagement/>
       </section>
       <section>
         <div className="my-5">

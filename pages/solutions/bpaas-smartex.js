@@ -7,7 +7,7 @@ import SolutionLeft from "../../components/common/SolutionLeft";
 import SmartexSlide from "../../components/common/SolutionSlider/SmartexSlide";
 import Image from "next/image";
 import SectionHeader from "../../components/common/SectionHeader";
-function BpassSmartex() {
+function BpaasSmartex() {
   return (
     <>
       <Head>
@@ -117,4 +117,4 @@ function BpassSmartex() {
   );
 }
 
-export default BpassSmartex;
+export default BpaasSmartex;

@@ -63,10 +63,15 @@ const OEMSection = () => {
                     <p className="lg:text-[15px] text-sm mt-5 leading-[1.8] tracking-[0.025em]">BPAAS Solutions have gone beyond just the implementation of Newgen Solution, BPAAS now have developed and deployed ISV Solutions like 
                     <Link href="#ApprovalNFA">
                         <span className="text-blue-500 cursor-pointer"> Note For Approval(NFA)</span>
-                    </Link> and  {' '} 
+                    </Link>,  {' '} 
                     <Link href="#VendorPortal">
                         <span className="text-blue-500 cursor-pointer">
                             Vendora(Vendor Portal)
+                            </span>
+                        </Link> and {' '}
+                        <Link href="#MDM">
+                        <span className="text-blue-500 cursor-pointer">
+                            Master Data Management
                             </span>
                         </Link> Solution to client to deliver best of class solutions using the Core Newgen Capabilities.
                         With these ISV Solutions, Customer can drastically reduce their time to market and with reduced customization efforts</p>

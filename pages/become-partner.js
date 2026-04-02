@@ -118,7 +118,7 @@ function BecomePartner() {
         {/* <div className="bg-[url('https://img.freepik.com/free-photo/aerial-view-business-team_53876-124515.jpg?t=st=1652260426~exp=1652261026~hmac=acf1b1969d77dd65a18ace60098bce3e1de99ca35f8eefbbfabead795a4a0cc5&w=740')] lg:h-[60vh] h-[60vh] sm:h-[70vh] bg-cover bg-no-repeat w-full flex text-white px-10 text-left items-center">
           <div className="lg:w-1/2 space-y-5">
             <h1 className="lg:text-5xl font-bold capitalize sm:text-2xl">
-              Become <b className="text-orange">BPASS</b> Partner
+              Become <b className="text-orange">BPAAS</b> Partner
             </h1>
             <p className="text-justify">
               Have a tremendous experience with advanced technological benefits
@@ -128,7 +128,7 @@ function BecomePartner() {
         </div> */}
         {/* <div className="lg:h-[40vh] h-auto bg-cover  bg-no-repeat w-full flex flex-col p-10 lg:p-20 text-center space-y-8 justify-center ">
           <h1 className="text-4xl font-bold text-left lg:text-center ">
-          Become <b>BPASS</b> Partner
+          Become <b>BPAAS</b> Partner
           </h1>
 
           <p className="text-justify lg:text-center"> 

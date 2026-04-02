@@ -23,7 +23,7 @@ function Solution() {
 
   return (
     <div className="md:px-10 ">
-      <div className="flex flex-col justify-ceneter w-full items-center px-10 md:pb-10 pb-4">
+      <div className="flex flex-col justify-center w-full items-center px-10 md:pb-10 pb-4">
         <div className="flex space-x-5 p-2 border border-orange text-lg ">
           <button
             onClick={() => setActive("solutions")}
@@ -68,9 +68,9 @@ function Solution() {
               : "Building a good customer experience does not happen by accident, it happens by design. We create client-centric models with our dedicated team to construct the best services"}
           </p>
           <Link passHref href="/contact-us">
-            <a className="w-full shadow-xl btn btn-primary btn-lg sm:w-auto border-2 transition duration-300 py-3 px-8 hover:bg-white hover:text-black font-semibold ">
+            <span className="w-full shadow-xl btn btn-primary btn-lg sm:w-auto border-2 transition duration-300 py-3 px-8 hover:bg-white hover:text-black font-semibold ">
               Contact Us Now
-            </a>
+            </span>
           </Link>
         </div>
       </section>
