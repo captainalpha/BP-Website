@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const ServicesImplementation = () => {
   const searchParams = useSearchParams();
-  const id = searchParams.get("id");
+  const id = searchParams?.get("id");
 
   if (!id) return null;
 

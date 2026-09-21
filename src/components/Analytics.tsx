@@ -13,7 +13,9 @@ const Analytics = () => {
 
   useEffect(() => {
     if (hasConsent) {
-      pageview(pathname);
+      if (pathname) {
+        pageview(pathname);
+      }
     }
   }, [pathname, hasConsent]);
 

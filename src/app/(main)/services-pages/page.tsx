@@ -15,7 +15,7 @@ const Services = () => {
   const [showModal, setShowModal] = useState(false);
   const [requestDemoOpen, setRequestDemoOpen] = useState(false);
   const searchParams = useSearchParams();
-  const page = searchParams.get("page");
+  const page = searchParams?.get("page");
 
   useEffect(() => {
     if (selectedImage) {
