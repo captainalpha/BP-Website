@@ -33,9 +33,13 @@ Recent commit history ("Fix Next.js route conflicts") reflects that a route defi
 
 Path alias: `@/*` → `./src/*` (so `@/components`, `@/lib`, `@/utils` all resolve into `src/`, **not** the root-level `components/`).
 
-### Duplicate config files
+### Config files
 
-Several configs exist in both `.js` and `.ts` form: `next.config.js` + `next.config.ts`, `tailwind.config.js` + `tailwind.config.ts`. When changing build/config behavior, confirm which file Next actually loads before editing (Next resolves one config file, not both) and prefer keeping them consistent. `next.config.ts` is the richer one (bundle analyzer, ImageKit `remotePatterns` for `ik.imagekit.io`, `optimizePackageImports` for `react-icons`). Note ESLint is set to not block builds (`eslint.ignoreDuringBuilds` / `ignoreDuringBuilds: true`).
+Next loads **`next.config.ts`** — it is the only Next config now (the old `next.config.js` was deleted because Next resolves `.js` before `.ts`, and the stale `.js` was silently shadowing the real config on Vercel). Edit `next.config.ts`. It sets bundle analyzer, ImageKit `remotePatterns` for `ik.imagekit.io`, `optimizePackageImports` for `react-icons`, `eslint.ignoreDuringBuilds`, and `typescript.ignoreBuildErrors: true`. The last is a deliberate workaround: Next 15.5.24 emits a broken `.next/types/validator.ts` for `src/`-directory projects (imports `../../app/...` instead of `../../src/app/...`), which fails the build type-check even though the app compiles cleanly — do not remove it without first upgrading Next past that bug.
+
+Tailwind still has both `tailwind.config.js` + `tailwind.config.ts`; keep them consistent. `postcss.config.js` must use `@tailwindcss/postcss` (Tailwind v4), not the v3-style `tailwindcss` plugin.
+
+Only ever keep **one** lockfile: `package-lock.json` (npm). If `yarn.lock` reappears, Vercel switches to Yarn and re-resolves the whole tree, ignoring `package-lock.json` — delete it.
 
 ### App Router server layer (`src/app`)
 
