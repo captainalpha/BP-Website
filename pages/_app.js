@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 
 import { motion, AnimatePresence } from "framer-motion";
 import CookiesMain from "../components/common/CookiesMain";
-
+import UnderDevelopment from "./under-development";
 // import styles from './slider.module.scss'
 function MyApp({ Component, pageProps, router }) {
   const spring = {
@@ -21,7 +21,8 @@ function MyApp({ Component, pageProps, router }) {
   };
   return (
     <>
-      <div className="z-50 scroll-smooth">
+      <UnderDevelopment />
+      {/* <div className="z-50 scroll-smooth">
         <Navbar />
       </div>
       <AnimatePresence>
@@ -38,7 +39,7 @@ function MyApp({ Component, pageProps, router }) {
             <CookiesMain/>
           </motion.div>
         </div>
-      </AnimatePresence>
+      </AnimatePresence> */}
     </>
   );
 }
