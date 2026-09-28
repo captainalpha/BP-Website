@@ -1,0 +1,256 @@
+@import "tailwindcss";
+
+:root {
+  --background: #e8e8e8;
+  --foreground: #e6e6eb;
+  --primary: #eeeeee;
+  --secondary: #00c9ff;
+  --accent: #9b59b6;
+  --btn-bg: #292b33;
+  --btn-hover: #3a3d47;
+  --btn-text: #ffffff;
+  --card-bg: #24262e;
+  --border-color: #383b45;
+  --font-manrope: "Manrope", sans-serif;
+
+  --scrollbar-thumb: #6a5acd;
+  --scrollbar-track: #1b1d23;
+
+  --link-color: #00c9ff;
+  --link-hover: #6a5acd;
+}
+
+body {
+  /* background: #f3f2f2; */
+  background: #000000;
+  color: #e6e6eb;
+  font-family: var(--font-interLight);
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --primary: #ea964d;
+  --primary-active: #ea9601;
+  --secondary: #6a9ec5;
+  --secondary-active: #6a9ec0;
+}
+
+@layer components {
+  .btn {
+    @apply bg-[var(--primary)] text-white px-4 py-2 border-none outline-none rounded-sm cursor-pointer active:scale-95 transition-all duration-300 hover:bg-[var(--primary-active)] text-sm;
+  }
+}
+
+@layer utilities {
+  .gradient-border-h {
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, #dfdfdf, white) 1;
+  }
+  .gradient-border-v {
+    border-right: 1px solid transparent;
+    border-image: linear-gradient(#dfdfdf, white) 1;
+  }
+  .gradient-bg-overlay {
+    background-image: linear-gradient(0deg, transparent 85%, #808080 100%);
+  }
+  .gradient-btn {
+    background: #ea964d;
+    background: linear-gradient(
+      90deg,
+      rgba(234, 150, 77, 1) 0%,
+      rgba(133, 66, 0, 1) 100%
+    );
+    transition: all 0.2s;
+  }
+
+  .gradient-btn:hover {
+    background: linear-gradient(
+      90deg,
+      rgb(221, 143, 74) 0%,
+      rgb(82, 41, 1) 100%
+    );
+    transform: scale(1.05);
+  }
+}
+
+/*  */
+.marquee-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.marquee {
+  display: flex;
+  gap: 50px;
+  animation: marquee-scroll 25s linear infinite;
+}
+
+.forHidScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.marquee-left {
+  animation-name: marquee-scroll-left;
+}
+
+.marquee-right {
+  animation-name: marquee-scroll-right;
+}
+
+@keyframes marquee-scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.marquee img {
+  height: 50px;
+  object-fit: contain;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes subtleGradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-animated-dark {
+  background: linear-gradient(
+    270deg,
+    #000000,
+    #0023237f,
+    #242424,
+    #1a1a1a,
+    #000000
+  );
+  background-size: 400% 400%;
+  animation: subtleGradientMove 10s ease infinite;
+}
+
+/* Width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Scrollbar Track (background) */
+::-webkit-scrollbar-track {
+  background: #000000; /* Light gray background */
+  border-radius: 10px;
+}
+
+/* Scrollbar Thumb (scroll handle) */
+::-webkit-scrollbar-thumb {
+  background-color: #252525; /* Your secondary color */
+  border-radius: 10px;
+  border: 1px solid transparent; /* Adds space around thumb */
+}
+
+/* On hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #232323;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(10px, -10px); /* Move 10px right and 10px up */
+  }
+}
+
+.float-animation {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes floatX {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+.float-x {
+  animation: floatX 3s ease-in-out infinite;
+}
+
+@keyframes floatV {
+  0%,
+  100% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(0px, -50px);
+  }
+}
+
+.float-v {
+  animation: floatX 3s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    text-shadow: 0 0 10px #639fcb, 0 0 2px #ea944a, 0 0 10px #ea944a;
+  }
+  50% {
+    text-shadow: 0 0 20px #639fcb, 0 0 3px #ea944a, 0 0 20px #ea944a;
+  }
+}
+
+/* Utility class for animated glow */
+.text-glow {
+  color: #f0eeed;
+  animation: glow 4s ease-in-out infinite;
+}
+
+@import "tailwindcss";
+
+@theme inline {
+  --animate-scroll: scroll var(--animation-duration, 40s)
+    var(--animation-direction, forwards) linear infinite;
+
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+}
+
