@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { FiX, FiArrowUpRight, FiChevronRight, FiCheckCircle } from "react-icons/fi";
+import { FiChevronRight } from "react-icons/fi";
 
 import PartnershipDialog, {
   Partnership,

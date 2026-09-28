@@ -1,9 +1,6 @@
 import React from "react";
 import CardsApproved from "./CardsAproved";
 import Beams from "@/components/animations/Beams";
-import Link from "next/link";
-import { GoChevronRight } from "react-icons/go";
-import { Routes } from "@/utils/constants";
 
 const DarkHeroNew = () => {
   return (

@@ -1,6 +1,5 @@
 "use client";
 
-import ClientSectionNew from "@/components/home/dark/Client-saction-new";
 import { useState } from "react";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { FiUser, FiMail, FiPhone, FiBriefcase, FiEdit2 } from "react-icons/fi";

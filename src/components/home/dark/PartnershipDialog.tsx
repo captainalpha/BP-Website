@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { FiX, FiArrowUpRight, FiChevronRight, FiCheckCircle } from "react-icons/fi";
+import { FiX, FiCheckCircle } from "react-icons/fi";
 
 export interface Partnership {
   id: string;

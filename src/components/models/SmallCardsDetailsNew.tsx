@@ -7,7 +7,6 @@ import "swiper/css/effect-cube";
 import { GoCheckCircleFill } from "react-icons/go";
 import Expandable from "../ui/expandable";
 import CursorTracker from "../ui/CursorTracker";
-import Link from "next/link";
 import RequestDemo from "./RequestDemo";
 import Image from "next/image";
 

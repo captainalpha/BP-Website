@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { Routes } from "@/utils/constants";
-import NavLink from "./NavLink";
 import { navLinks } from "./NavLinks";
 import { RxHamburgerMenu } from "react-icons/rx";
 import MobileNav from "./MobileNav";
@@ -15,7 +14,7 @@ import { isIOSorSafari } from "@/providers/Helper";
 import Image from "next/image";
 
 const Header: React.FC = () => {
-  const { openDropdown, setOpenDropdown, setOpenMobileNav } = useApp();
+  const { setOpenDropdown, setOpenMobileNav } = useApp();
   const [scrollingDown, setScrollingDown] = useState(false);
   const [scrollY, setScrollY] = useState(0);
   const [requestDemoOpen, setRequestDemoOpen] = useState(false);

@@ -237,7 +237,7 @@ const CookiePolicy = () => {
             <p className="mt-3 leading-relaxed">
               If Google Analytics or another analytics service is enabled on our
               website, its use will be subject to the applicable configuration,
-              consent requirements, and the provider's own policies.
+              consent requirements, and the provider&apos;s own policies.
             </p>
           </div>
 
@@ -281,7 +281,7 @@ const CookiePolicy = () => {
             </p>
 
             <p className="mt-3 leading-relaxed">
-              Please refer to your browser's official documentation for
+              Please refer to your browser&apos;s official documentation for
               instructions on managing cookie settings.
             </p>
           </div>
@@ -324,7 +324,7 @@ const CookiePolicy = () => {
           {/* 9 */}
           <div>
             <h2 className="mb-3 text-2xl font-semibold text-white">
-              9. Children's Privacy
+              9. Children&apos;s Privacy
             </h2>
 
             <p className="leading-relaxed">
@@ -362,7 +362,7 @@ const CookiePolicy = () => {
             </p>
 
             <p className="mt-3 leading-relaxed">
-              When we make changes, we will update the "Last Updated" date
+              When we make changes, we will update the &quot;Last Updated&quot; date
               displayed at the top or bottom of this policy. We encourage you
               to review this page periodically for the latest information.
             </p>

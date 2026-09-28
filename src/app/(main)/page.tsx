@@ -1,6 +1,5 @@
 "use client";
 
-import CaseStudies from "@/components/home/dark/CaseStudies";
 import Certification from "@/components/home/dark/Certification";
 import ClientSectionNew from "@/components/home/dark/Client-saction-new";
 import DarkHeroNew from "@/components/home/dark/DarkHeroNew";
