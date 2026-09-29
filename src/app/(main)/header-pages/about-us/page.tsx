@@ -1,10 +1,18 @@
 "use client";
 
 import CardSwap, { Card } from "@/components/animations/CardSwap";
-import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 import { AnimatePresence, motion } from "motion/react";
 import Image from "next/image";
 import React from "react";
+import dynamic from "next/dynamic";
+
+const CanvasRevealEffect = dynamic(
+  () =>
+    import("@/components/ui/canvas-reveal-effect").then((mod) => ({
+      default: mod.CanvasRevealEffect,
+    })),
+  { ssr: false }
+);
 
 const Page = () => {
   return (
@@ -21,50 +29,45 @@ const Page = () => {
             <h1 className="text-7xl font-bold text-[#ec964d] mb-10">
               What Drives BPAAS
             </h1>
-            <p className="text-lg">
+            <p className="text-lg font-light">
               Behind every product, feature, and line of code, there&apos;s a
               mission — to simplify the complex, empower businesses, and design
               the future of digital transformation. Discover the mindset,
               passion, and purpose that fuel everything we create.
             </p>
           </div>
-          <CardSwap
-            cardDistance={50}
-            verticalDistance={70}
-            delay={5000}
-            pauseOnHover={false}
-          >
+          <CardSwap cardDistance={50} verticalDistance={70} delay={5000} pauseOnHover={false}>
             <Card>
               <h3 className="px-7 py-2 ">We Have Best Developers At BPAAS</h3>
               <Image
                 src={"/images/1744703364038.jpeg"}
-                alt="sd"
-                height={10000}
-                width={10000}
+                alt="BPAAS developers"
+                height={400}
+                width={640}
+                sizes="(max-width: 768px) 90vw, 420px"
+                className="h-auto w-full object-cover"
               />
             </Card>
             <Card>
               <h3 className="px-7 py-2">We provide Best Services</h3>
               <Image
                 src={"/images/1744703364237.jpeg"}
-                alt="sd"
-                height={10000}
-                width={10000}
+                alt="BPAAS services"
+                height={400}
+                width={640}
+                sizes="(max-width: 768px) 90vw, 420px"
+                className="h-auto w-full object-cover"
               />
             </Card>
             <Card>
-              <h3 className="px-7 py-2">We Have Best Solutions</h3>
+              <h3 className="px-7 py-2">Celebrating Excellence</h3>
               <Image
                 src={"/images/team.jpg"}
-                alt="sd"
-                height={10000}
-                width={10000}
-              />
-              <Image
-                src={"/images/team.jpg"}
-                alt="sd"
-                height={10000}
-                width={10000}
+                alt="BPAAS team"
+                height={400}
+                width={640}
+                sizes="(max-width: 768px) 90vw, 420px"
+                className="h-auto w-full object-cover"
               />
             </Card>
           </CardSwap>
@@ -78,7 +81,7 @@ const Page = () => {
             <h2 className="text-2xl md:text-3xl font-semibold text-[#ec964d] mb-4">
               Our Core Belief
             </h2>
-            <p className="leading-relaxed text-lg">
+            <p className="leading-relaxed text-lg font-light">
               <em>“Technology should simplify life, not complicate it.”</em>
               <br />
               <br />
@@ -119,7 +122,7 @@ const Page = () => {
             <h2 className="text-2xl md:text-3xl font-semibold text-[#ec964d] mb-4">
               Our Philosophy
             </h2>
-            <p className="leading-relaxed text-lg">
+            <p className="leading-relaxed text-lg font-light">
               <em>“People first. Then process. Then technology.”</em>
               <br />
               <br />
@@ -131,7 +134,7 @@ const Page = () => {
         </div>
 
         {/* Pillars */}
-        <div className="flex items-center gap-10">
+        <div className="flex items-center gap-10 font-light">
           <section className="mb-16">
             <h2 className="text-2xl md:text-3xl font-semibold text-[#ec964d] mb-4">
               Pillars That Power Us
@@ -185,7 +188,7 @@ const Page = () => {
               />
             </CardNew>
           </div>
-          <section className="mb-16">
+          <section className="mb-16 font-light">
             <h2 className="text-2xl md:text-3xl font-semibold text-[#ec964d] mb-4">
               The Engine Behind BPAAS
             </h2>
@@ -211,7 +214,7 @@ const Page = () => {
 
         {/* Vision */}
         <div className="flex items-center gap-10">
-          <section className="mb-16">
+          <section className="mb-16 font-light">
             <h2 className="text-2xl md:text-3xl font-semibold text-[#ec964d] mb-4">
               Where We&apos;re Headed
             </h2>
@@ -237,7 +240,7 @@ const Page = () => {
         </div>
 
         {/* Final Statement */}
-        <section className="mb-8 flex flex-col items-center mt-30">
+        <section className="mb-8 flex flex-col items-center mt-30 font-light">
           <h2 className="text-2xl md:text-3xl font-semibold text-[#ec964d] mb-4">
             Why We Exist
           </h2>

@@ -92,6 +92,27 @@ const partnerships: Partnership[] = [
       "Hybrid cloud solutions",
     ],
   },
+  {
+    id: "indusface",
+    name: "Indusface",
+    shortDescription:
+      "Application security, API security, and cloud security solutions for modern enterprises.",
+    logo: "/images/partnerships/indusface.png",
+    whatIs:
+      "Indusface is an application security company focused on protecting web applications, APIs, and cloud environments through solutions designed to help organizations identify, manage, and mitigate security risks.",
+    bpaasTitle: "BPAAS with Indusface",
+    bpaasDescription:
+      "BPAAS Solutions can help organizations strengthen the security of their digital applications and APIs by integrating application security practices into modern enterprise solutions and development workflows.",
+    capabilities: [
+      "Web application security",
+      "API security",
+      "Cloud application security",
+      "Application vulnerability assessment",
+      "Security testing and protection",
+      "Enterprise application security",
+      "Security integration with digital solutions",
+    ],
+  },
 ];
 
 export default function OurPartnerships() {
@@ -111,14 +132,14 @@ export default function OurPartnerships() {
               TECHNOLOGY ECOSYSTEM
             </span>
 
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-6xl">
               Our{" "}
               <span className="text-[#ec964c]">
                 Partnerships
               </span>
             </h2>
 
-            <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-gray-400 md:text-lg">
+            <p className="mt-6 text-gray-300 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed">
               We bring together enterprise technologies and domain expertise
               to help organizations build smarter, scalable, and
               future-ready digital solutions.
@@ -126,7 +147,7 @@ export default function OurPartnerships() {
           </div>
 
           {/* Partnership Cards */}
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
             {partnerships.map((partnership) => (
               <button
                 key={partnership.id}
@@ -139,11 +160,6 @@ export default function OurPartnerships() {
 
                 {/* Logo Area */}
                 <div className="relative mb-7 flex h-28 items-center justify-center rounded-xl border border-white/10 bg-black/20 p-5 transition-all duration-300 group-hover:border-[#ec964c]/20">
-                  {/* Replace these placeholders with actual logos */}
-                  {/* <div className="flex h-full w-full items-center justify-center rounded-lg border border-dashed border-white/20 text-sm text-gray-500">
-                    {partnership.name} Logo
-                  </div> */}
-
                   {/* When you add logo images, use: */}
                   <img
                     src={partnership.logo}

@@ -1,7 +1,68 @@
+"use client";
+
 import { CardData } from "@/assets/Dataa";
-import SmallCardsDetailsNew from "@/components/models/SmallCardsDetailsNew";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import dynamic from "next/dynamic";
+
+const SmallCardsDetailsNew = dynamic(
+  () => import("@/components/models/SmallCardsDetailsNew"),
+  { ssr: false }
+);
+
+function InViewVideo({
+  src,
+  title,
+  onReady,
+}: {
+  src: string;
+  title: string;
+  onReady: (title: string) => void;
+}) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [loadSource, setLoadSource] = useState(false);
+
+  useEffect(() => {
+    const node = videoRef.current;
+    if (!node) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setLoadSource(true);
+        } else {
+          node.pause();
+        }
+      },
+      { rootMargin: "120px" }
+    );
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const node = videoRef.current;
+    if (!loadSource || !node) return;
+    node.load();
+    node.play().catch(() => {});
+  }, [loadSource]);
+
+  return (
+    <video
+      ref={videoRef}
+      loop
+      muted
+      playsInline
+      poster="https://ik.imagekit.io/wjx8terl3/loading.jpg?updatedAt=1753686985755"
+      preload="none"
+      onCanPlayThrough={() => onReady(title)}
+      className="absolute top-0 left-0 w-full h-full object-cover z-0 transition-opacity duration-300"
+    >
+      {loadSource ? <source src={`${src}#t=0.001`} type="video/mp4" /> : null}
+    </video>
+  );
+}
 
 const AnimatedCard = () => {
   const [loadingStates, setLoadingStates] = useState<Record<string, boolean>>(
@@ -22,7 +83,6 @@ const AnimatedCard = () => {
     setTimeout(() => {
       setLoadingStates((prev) => {
         if (prev[title]) {
-          console.warn(`Safari fallback triggered for ${title}`);
           return { ...prev, [title]: false };
         }
         return prev;
@@ -31,7 +91,10 @@ const AnimatedCard = () => {
   };
 
   return (
-    <div id="Products" className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-10 md:mt-14 mt-4">
+    <div
+      id="Products"
+      className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-10 md:mt-14 mt-4"
+    >
       {CardData.map((card) => (
         <div
           key={card.title}
@@ -50,18 +113,11 @@ const AnimatedCard = () => {
           )}
 
           {card.isVideo && (
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              poster="https://ik.imagekit.io/wjx8terl3/loading.jpg?updatedAt=1753686985755"
-              preload="metadata"
-              onCanPlayThrough={() => handleMediaLoad(card.title)}
-              className={`absolute top-0 left-0 w-full h-full object-cover z-0 transition-opacity duration-300 `}
-            >
-              <source src={`${card.image}#t=0.001`} type="video/mp4" />
-            </video>
+            <InViewVideo
+              src={card.image}
+              title={card.title}
+              onReady={handleMediaLoad}
+            />
           )}
 
           {!card.isVideo && (
@@ -69,9 +125,9 @@ const AnimatedCard = () => {
               src={card.image}
               alt={card.title}
               loading="lazy"
-              height={10000}
-              width={10000}
-              sizes="100vh"
+              height={500}
+              width={400}
+              sizes="(max-width: 768px) 50vw, 25vw"
               onLoadStart={() => handleMediaStart(card.title)}
               onLoad={() => handleMediaLoad(card.title)}
               className={`absolute top-0 left-0 w-full h-full object-cover z-0 transition-opacity duration-300 ${
@@ -83,29 +139,11 @@ const AnimatedCard = () => {
           )}
 
           <div className="absolute md:bottom-0 w-full backdrop-blur-xs p-6 bg-[#0000005f] h-fit z-10  ">
-            <h1 className="md:text-2xl text-sm w-full mb-6 ">{card.title}</h1>
-            <p className="md:text-sm text-xs hidden md:block w-full h-fit z-10 ">
+            <h1 className="md:text-2xl font-light text-sm w-full mb-6 ">{card.title}</h1>
+            <p className="md:text-sm text-xs font-light hidden md:block w-full h-fit z-10 ">
               {card.description}
             </p>
           </div>
-
-          {/* <h1
-            style={{ fontFamily: "var(--font-inter)" }}
-            className="p-6 md:text-2xl font-bold backdrop-blur-xs bg-[#0000002d]"
-          >
-            {card.title}
-          </h1>
-
-          <div className="absolute bottom-0 w-full h-fit z-10">
-            <div className="p-5 h-fit backdrop-blur-md transform translate-y-[250px] group-hover:translate-y-0 transition duration-400 ease-[cubic-bezier(0.31,1.21,0.64,1.02)] font-mono">
-              <div
-                style={{ fontFamily: "var(--font-inter)" }}
-                className="mt-2 text-white"
-              >
-                {card.description}
-              </div>
-            </div>
-          </div> */}
         </div>
       ))}
       <SmallCardsDetailsNew
@@ -113,11 +151,6 @@ const AnimatedCard = () => {
         onClose={() => setSelectedCard(null)}
         cardData={selectedCard}
       />
-      {/* <SmallCardsDetails
-        open={!!selectedCard}
-        onClose={() => setSelectedCard(null)}
-        cardData={selectedCard}
-      /> */}
     </div>
   );
 };

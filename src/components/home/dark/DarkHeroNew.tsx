@@ -1,6 +1,13 @@
+"use client";
+
 import React from "react";
+import dynamic from "next/dynamic";
 import CardsApproved from "./CardsAproved";
-import Beams from "@/components/animations/Beams";
+
+const Beams = dynamic(() => import("@/components/animations/Beams"), {
+  ssr: false,
+  loading: () => <div className="absolute inset-0 bg-black" />,
+});
 
 const DarkHeroNew = () => {
   return (
@@ -13,7 +20,7 @@ const DarkHeroNew = () => {
           <Beams
             beamWidth={2}
             beamHeight={15}
-            beamNumber={12}
+            beamNumber={8}
             lightColor="#A8A8A8"
             speed={2}
             noiseIntensity={1.75}
@@ -22,7 +29,6 @@ const DarkHeroNew = () => {
           />
         </div>
         <div className="flex flex-col md:flex-row py-10 justify-between items-center space-y-10 md:space-y-0 relative z-10">
-          {/* Left: Hero Text */}
           <div className="md:w-2/3">
             <h1
               style={{ fontFamily: "var(--font-inter)" }}
@@ -39,31 +45,17 @@ const DarkHeroNew = () => {
             </h1>
           </div>
 
-          {/* Right: Description + CTA */}
           <div className="md:w-1/3 text-gray-300 text-base md:text-lg leading-relaxed">
             <div className="border-t-4 border-[#ec964c] w-10 mb-4" />
-            <p className="mb-6">
+            <p className="mb-6 font-light">
               BPAAS Solutions delivers intelligent, scalable platforms that
               transform the way organizations operate. By blending automation,
               cloud-native architecture, and deep domain expertise, we empower
               businesses to streamline workflows, reduce complexity, and unlock
-              new levels of efficiency. We don’t just build solutions we
+              new levels of efficiency. We don&apos;t just build solutions we
               architect digital excellence for the next generation of
               enterprise.
             </p>
-            {/* <Link
-              href={Routes.COMPANY_COMP}
-              className="text-white font-semibold flex items-center space-x-1 hover:underline"
-            >
-              <button
-                className={`cursor-pointer w-fit h-full transition duration-300 ease-in-out  flex justify-between items-center pr-6 group`}
-              >
-                Discover What We Build
-                <span className="ml-4 text-2xl bg-[#ec964c] text-[#000000] opacity-40 translate-x-[-10px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                  <GoChevronRight />
-                </span>
-              </button>
-            </Link> */}
           </div>
         </div>
       </div>

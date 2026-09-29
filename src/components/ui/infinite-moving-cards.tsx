@@ -30,7 +30,6 @@ export const InfiniteMovingCards = ({
 
   useEffect(() => {
     addAnimation();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const [start, setStart] = useState(false);
 
@@ -103,10 +102,11 @@ export const InfiniteMovingCards = ({
                 )}
                 <Image
                   src={item.image}
-                  alt="logos"
-                  height={10000}
-                  width={10000}
-                  className={`h-34 w-50 object-contain rounded-lg transition-all duration-500`}
+                  alt={`${item.type} client logo`}
+                  height={136}
+                  width={200}
+                  loading="lazy"
+                  className="h-34 w-50 object-contain rounded-lg transition-all duration-500"
                   onLoad={() => setLoading(false)}
                   style={loading ? { opacity: 0 } : { opacity: 1 }}
                 />

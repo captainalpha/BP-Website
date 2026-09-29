@@ -3,15 +3,9 @@ import { IoIosClose } from "react-icons/io";
 import Link from "next/link";
 import { Routes } from "@/utils/constants";
 import Image from "next/image";
-import { INavLink } from "@/utils/types";
-import MobileNavLink from "./MobileNavLink";
 import { useApp } from "@/providers/AppProvider";
 
-interface IProps {
-  navLinks: INavLink[];
-}
-
-const MobileNav = ({ navLinks }: IProps) => {
+const MobileNav = () => {
   const { openMobileNav, setOpenMobileNav } = useApp();
 
   return (
@@ -31,9 +25,9 @@ const MobileNav = ({ navLinks }: IProps) => {
           <Image
             src="/images/bpaas-logo.svg"
             alt="Bpaas Logo"
-            height={100}
-            width={100}
-            className="h-full w-18"
+            height={48}
+            width={136}
+            className="h-12 w-auto"
           />
         </Link>
         <button onClick={() => setOpenMobileNav(false)}>
@@ -42,9 +36,18 @@ const MobileNav = ({ navLinks }: IProps) => {
       </div>
 
       <div className="p-4">
-        {navLinks?.map((nav, ind) => (
-          <MobileNavLink key={`${nav?.label}_${ind}`} nav={nav} />
-        ))}
+      <ul
+          style={{ fontFamily: "var(--font-inter-light)" }}
+          className="flex flex-col items-center gap-4 text-md font-light"
+        >
+          <Link href={Routes.HOME}>Home</Link>
+          <a href="#Products">Products</a>  
+          <a href="#Clients">Clients</a>
+          <a href="#Partnerships">Partnerships</a>
+          <a href="#AboutUs">About Us</a>
+          <a href="#ContactUs">Contact Us</a>
+        </ul>
+        
       </div>
     </motion.div>
   );

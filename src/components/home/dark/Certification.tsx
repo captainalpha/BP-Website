@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import { motion, useAnimation, useInView } from "framer-motion";
+"use client";
+import React from "react";
 import Image from "next/image";
 
 const items = [
@@ -31,35 +31,18 @@ const items = [
 ];
 
 const Certification = () => {
-  const ref = useRef(null);
-  const inView = useInView(ref, { amount: 0.5 });
-  const controls = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      controls.start({ opacity: 1, y: 0 });
-    } else {
-      controls.start({ opacity: 0, y: 40 });
-    }
-  }, [inView, controls]);
   return (
-    <div className="mt-10">
-      <section ref={ref} className="bg-black text-white pt-20 px-4 mb-10">
-        <motion.div
-          animate={controls}
-          initial={{ opacity: 0, y: 40 }}
-          transition={{ duration: 0.8 }}
-          className="max-w-7xl mx-auto text-center"
-        >
-          <h1 className="md:text-7xl text-5xl text-white font-extrabold mb-4">
+    <div className="mt-10 mb-20">
+      <section className="bg-black text-white pt-20 px-4 mb-10">
+        <div className="max-w-7xl mx-auto text-center">
+          <h1 className="md:text-6xl text-4xl text-white font-extrabold mb-4">
             Our <span className="text-[#ec964c]"> Certification</span>{" "}
           </h1>
-          <p className="text-[#ffffff] text-lg text-center">
+          <p className="mt-6 text-gray-300 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed">
             Trust is gained with time, and awards are won with excellence. We
             build to achieve both.
           </p>
-        </motion.div>
-
+        </div>
         <div className="mt-14 h-1 bg-gradient-to-r from-[#ff6a0040] via-[#00bdec] to-[#ff6a004a] w-40 mx-auto rounded-full blur-[2px]" />
       </section>
       <div className="flex justify-center items-center">
@@ -71,6 +54,8 @@ const Certification = () => {
               alt={item.title}
               width={200}
               height={200}
+              loading="lazy"
+              sizes="200px"
               className="object-contain md:grayscale-75 hover:grayscale-0 transition-all duration-200 ease-in-out"
             />
           ))}

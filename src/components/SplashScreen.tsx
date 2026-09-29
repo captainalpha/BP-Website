@@ -23,13 +23,6 @@ const SplashScreen = ({ shouldExit }: SplashScreenProps) => {
           loop
           autoplay
         />
-        {/* <Image
-          src="/images/MainScene.gif"
-          alt="MainScene"
-          height={100000}
-          width={500000}
-          className="h-full w-full"
-        /> */}
       </div>
     </div>
   );

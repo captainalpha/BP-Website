@@ -12,6 +12,7 @@
   --card-bg: #24262e;
   --border-color: #383b45;
   --font-manrope: "Manrope", sans-serif;
+  --font-inter-light: var(--font-inter);
 
   --scrollbar-thumb: #6a5acd;
   --scrollbar-track: #1b1d23;
@@ -24,7 +25,7 @@ body {
   /* background: #f3f2f2; */
   background: #000000;
   color: #e6e6eb;
-  font-family: var(--font-interLight);
+  font-family: var(--font-inter);
   scroll-behavior: smooth;
 }
 
@@ -240,8 +241,6 @@ body {
   color: #f0eeed;
   animation: glow 4s ease-in-out infinite;
 }
-
-@import "tailwindcss";
 
 @theme inline {
   --animate-scroll: scroll var(--animation-duration, 40s)

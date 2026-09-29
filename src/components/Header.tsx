@@ -1,96 +1,45 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import { motion } from "motion/react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import { Routes } from "@/utils/constants";
-import { navLinks } from "./NavLinks";
 import { RxHamburgerMenu } from "react-icons/rx";
 import MobileNav from "./MobileNav";
-import RequestDemo from "./models/RequestDemo";
 import { GoChevronRight } from "react-icons/go";
 import { usePathname } from "next/navigation";
 import { useApp } from "@/providers/AppProvider";
-import { isIOSorSafari } from "@/providers/Helper";
 import Image from "next/image";
 
 const Header: React.FC = () => {
   const { setOpenDropdown, setOpenMobileNav } = useApp();
-  const [scrollingDown, setScrollingDown] = useState(false);
-  const [scrollY, setScrollY] = useState(0);
-  const [requestDemoOpen, setRequestDemoOpen] = useState(false);
   const pathname = usePathname();
-  const disableAnimation = isIOSorSafari();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-
-      if (window.scrollY > scrollY) {
-        setScrollingDown(true);
-      } else {
-        setScrollingDown(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [scrollY]);
 
   useEffect(() => {
     setOpenDropdown(null);
-    setOpenMobileNav(false);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pathname]);
+  }, [pathname, setOpenDropdown]);
 
   return (
-    <motion.header
-      initial={{ y: 0 }}
-      animate={{ y: !disableAnimation && scrollingDown ? -100 : 0 }}
-      transition={{ type: "spring", stiffness: 100, damping: 10 }}
-      className="fixed top-0 left-0 right-0 z-50 h-24  bg-[#000000] text-[#ffffff]"
-      // className="fixed top-0 left-0 right-0 z-50 h-24 bg-[#22222290] backdrop-blur-xl text-[#ffffff]"
-    >
+    <header className="fixed top-0 left-0 right-0 z-50 h-24  bg-[#000000] text-[#ffffff]">
       <div className="px-4 h-full flex items-center justify-between relative">
         <Link href={Routes.HOME}>
           <Image
             src="/images/bpaas-logo.svg"
             alt="Bpaas Logo"
-            height={10000}
-            width={10000}
-            className="h-full w-34"
+            height={48}
+            width={136}
+            priority
+            className="h-12 w-auto"
           />
-          {/* <BpaasLogoAnimation /> */}
         </Link>
-        {/* <ul
-          style={{ fontFamily: "var(--font-inter-light)" }}
-          className="hidden md:flex items-center gap-4 text-md font-light"
-        >
-          {navLinks.map((link, index) => (
-            <NavLink
-              key={link?.label + index}
-              link={link}
-              open={openDropdown === index}
-              onToggle={() =>
-                setOpenDropdown(openDropdown === index ? null : index)
-              }
-            />
-          ))}
-        </ul> */}
         <ul
-          style={{ fontFamily: "var(--font-inter-light)" }}
+          style={{ fontFamily: "var(--font-inter)" }}
           className="hidden md:flex items-center gap-4 text-md font-light"
         >
-          {/* {navLinks.map((link, index) => ( */}
           <Link href={Routes.HOME}>Home</Link>
           <a href="#Products">Products</a>  
           <a href="#Clients">Clients</a>
           <a href="#Partnerships">Partnerships</a>
           <a href="#AboutUs">About Us</a>
           <a href="#ContactUs">Contact Us</a>
-          {/* ))} */}
         </ul>
         <a className="hidden md:block" href="#ContactUs">
           <button
@@ -108,13 +57,9 @@ const Header: React.FC = () => {
         >
           <RxHamburgerMenu size={22} />
         </button>
-        <MobileNav {...{ navLinks }} />
-        <RequestDemo
-          open={requestDemoOpen}
-          onClose={() => setRequestDemoOpen(false)}
-        />
+        <MobileNav />
       </div>
-    </motion.header>
+    </header>
   );
 };
 

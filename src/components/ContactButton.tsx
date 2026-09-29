@@ -1,8 +1,12 @@
 "use client";
 
 import { TbMessagePlus } from "react-icons/tb";
-import RequestDemo from "./models/RequestDemo";
 import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
+
+const RequestDemo = dynamic(() => import("./models/RequestDemo"), {
+  ssr: false,
+});
 
 export default function ContactButton() {
   const [requestDemoOpen, setRequestDemoOpen] = useState(false);
@@ -32,10 +36,11 @@ export default function ContactButton() {
           className="relative cursor-pointer hover:text-white p-2  text-[#ec964d] rounded-full shadow-xl transition-all  duration-300 ease-in-out"
         >
           <TbMessagePlus size={30} />
-          {/* <div className="h-2 w-2 rounded-full bg-[#639fcb] absolute top-0 right-0 animate-ping" /> */}
         </button>
       </div>
-      <RequestDemo open={requestDemoOpen} onClose={handleClose} />
+      {requestDemoOpen ? (
+        <RequestDemo open={requestDemoOpen} onClose={handleClose} />
+      ) : null}
     </div>
   );
 }

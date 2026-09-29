@@ -1,3 +1,5 @@
+"use client";
+
 import {
   forwardRef,
   useImperativeHandle,
@@ -90,7 +92,12 @@ function extendMaterial<T extends THREE.Material = THREE.Material>(
 }
 
 const CanvasWrapper: FC<{ children: ReactNode }> = ({ children }) => (
-  <Canvas dpr={[1, 2]} frameloop="always" className="w-full h-full relative">
+  <Canvas
+    dpr={[1, 1.25]}
+    frameloop="always"
+    gl={{ antialias: false, powerPreference: "high-performance" }}
+    className="w-full h-full relative"
+  >
     {children}
   </Canvas>
 );

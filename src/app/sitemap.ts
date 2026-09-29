@@ -6,9 +6,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${process.env.NEXT_PUBLIC_BASE_URL_PROD}/`,
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL_PROD}/client-page`,
-    },
-    {
       url: `${process.env.NEXT_PUBLIC_BASE_URL_PROD}/company-comp`,
     },
     {

@@ -206,13 +206,7 @@ const SmallCardsDetailsNew = ({
                       >
                         Book a Demo
                       </button>
-                      {/* {cardData?.openPage && (
-                        <Link href={cardData.openPage}>
-                          <button className="px-6 py-2 text-sm cursor-pointer font-medium bg-white text-black hover:bg-black hover:text-white border border-white transition-all duration-200">
-                            Learn More
-                          </button>
-                        </Link>
-                      )} */}
+                     
                     </div>
                   </div>
                   <div className="hidden md:flex  items-center px-10">

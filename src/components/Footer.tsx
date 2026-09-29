@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import {
   FaLinkedin,
@@ -8,12 +9,10 @@ import {
 import Image from "next/image";
 import { Routes } from "@/utils/constants";
 import Link from "next/link";
-import RequestDemo from "./models/RequestDemo";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { IoCheckmarkDoneOutline } from "react-icons/io5";
 
 const Footer = () => {
-  const [requestDemoOpen, setRequestDemoOpen] = useState(false);
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState("");
   const [loading, setLoading] = useState(false);
@@ -51,8 +50,9 @@ const Footer = () => {
               <Image
                 src="/images/bpaas-logo.svg"
                 alt="BPAAS Logo"
-                width={200}
+                width={160}
                 height={40}
+                className="h-10 w-auto"
               />
             </Link>
           </div>
@@ -82,28 +82,6 @@ const Footer = () => {
                 Home
               </Link>
             </li>
-            {/* <li
-              className="cursor-pointer hover:text-white"
-              onClick={() => setRequestDemoOpen(true)}
-            >
-              Request Demo
-            </li>
-            <li>
-              <Link
-                href={Routes.CLIENT_PAGE}
-                className="hover:text-white transition"
-              >
-                Clients
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={Routes.COMPANY_COMP}
-                className="hover:text-white transition"
-              >
-                Company
-              </Link>
-            </li> */}
             <li><a href="#Products">Products</a></li>  
           <li><a href="#Clients">Clients</a></li>
           <li><a href="#Partnerships">Partnerships</a></li>
@@ -114,8 +92,6 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-
-        {/* Contact Us */}
         <div>
           <h3 className="text-white font-semibold text-lg mb-4">Contact Us</h3>
           <ul className="space-y-3 text-sm text-gray-400">
@@ -192,10 +168,6 @@ const Footer = () => {
           Privacy Policy
         </Link>
       </div>
-      <RequestDemo
-        open={requestDemoOpen}
-        onClose={() => setRequestDemoOpen(false)}
-      />
     </footer>
   );
 };

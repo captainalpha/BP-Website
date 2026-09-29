@@ -23,9 +23,9 @@ const Analytics = () => {
     <>
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-        strategy="afterInteractive"
+        strategy="lazyOnload"
       />
-      <Script id="gtag-init" strategy="afterInteractive">
+      <Script id="gtag-init" strategy="lazyOnload">
         {`
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}

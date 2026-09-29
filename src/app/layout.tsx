@@ -1,38 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Manrope, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Providers from "@/providers";
-import ClickSpark from "@/components/animations/ClickSpark";
 import NextTopLoader from "nextjs-toploader";
 import Analytics from "@/components/Analytics";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ImageKitProvider } from "@imagekit/next";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const manrope = Manrope({
-  variable: "--font-manrope",
-  subsets: ["latin"],
-});
-
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["700"],
-});
-const interLight = Inter({
-  variable: "--font-inter-light",
-  subsets: ["latin"],
-  weight: ["200"],
+  weight: ["200", "400", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -77,35 +57,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable}  ${manrope.variable} ${inter.variable} ${interLight.variable}  antialiased`}
-      >
+      <body className={`${inter.variable} antialiased`}>
         <ImageKitProvider urlEndpoint="https://ik.imagekit.io/bpaas">
-          {/* <NextTopLoader crawl={true} color="#ec964c" showSpinner={false} /> */}
           <NextTopLoader
-              color="#ec964c"
-              initialPosition={0.3}
-              crawlSpeed={30}
-              speed={50}
-              crawl={true}
-              showSpinner={false}
-              height={3}
-              easing="linear"
-              shadow={false}
-              />
-          <ClickSpark
-            sparkColor="#fff6"
-            sparkSize={10}
-            sparkRadius={5}
-            sparkCount={10}
-            duration={900}
-          >
-            <Providers>
-              <Analytics />
-              <ToastContainer draggable pauseOnHover theme="dark" />
-              {children}
-            </Providers>
-          </ClickSpark>
+            color="#ec964c"
+            initialPosition={0.3}
+            crawlSpeed={30}
+            speed={50}
+            crawl={true}
+            showSpinner={false}
+            height={3}
+            easing="linear"
+            shadow={false}
+          />
+          <Providers>
+            <Analytics />
+            <ToastContainer draggable pauseOnHover theme="dark" />
+            {children}
+          </Providers>
         </ImageKitProvider>
       </body>
     </html>

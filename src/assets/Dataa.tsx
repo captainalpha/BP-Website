@@ -1,680 +1,4 @@
 import { Routes } from "@/utils/constants";
-import { IoMdStar } from "react-icons/io";
-import { MdOutlineStarBorder } from "react-icons/md";
-
-export const ServiceImplementationData: Testimonial[] = [
-  {
-    id: 1,
-    name: "Accounts Payable For Forbes Marshall",
-    quote:
-      "Forbes Marshall was looking to automate their vendor invoices which they use to receive from multiple channels. Without effective automation the entire process was manual and took lot of time for approvals, 3-way matches, and validations before payments can be released.",
-    src: "https://ik.imagekit.io/wjx8terl3/k-study/forbes-marshall.webp?updatedAt=1753703719135",
-    bgImages:
-      "url('https://ik.imagekit.io/wjx8terl3/k-study/forbes-marshall.webp?updatedAt=1753703719135')",
-    target: "Read More",
-    //
-    kStudy: [
-      {
-        title: "Forbes Marshall",
-        logoImage: "/images/k-study/download.webp",
-        logoImageAA: "/images/k-study/forbesL.webp",
-        description:
-          "Forbes Marshall was looking to automate their vendor invoices which they use to receive from multiple channels.",
-        problemStatementText:
-          "Forbes Marshall was looking to automate their vendor invoices which they use to receive from multiple channels. Without effective automation the entire process was manual and took lot of time for approvals, 3-way matches, and validations before payments can be released.",
-        projectDetailsText:
-          "BPAAS delivered Newgen Accounts Payable Automation solution with BPAAS MetaEx for data extraction from invoices, IBPS for automating the process, and OmniDocs for soring document which in total automated the complete GRN and 3-way Match process along with handling all validation and approvals in System. The system was integrated with Oracle EBS and Image Enablement Features was delivered to give ease to business users. ",
-        keyAchievementText: (
-          <div>
-            <li>Standardize and automate processes across Payables</li>
-            <li>Enhance user and vendor experience</li>
-            <li>Automation of PO, Non PO, GRN and Invoice Payments</li>
-            <li>
-              Image Enablement with Oracle EBS ERP using Oracle Integration
-              Cloud
-            </li>
-          </div>
-        ),
-        stareNumber: 7.9,
-        stars: (
-          <div className="flex items-center justify-center w-full ">
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <MdOutlineStarBorder className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-          </div>
-        ),
-        LUp: 21,
-        LDown: 21,
-      },
-    ],
-  },
-  {
-    id: 2,
-    name: "Account Opening For Prime Bank Kenya",
-    quote:
-      "Prime Bank wanted to automate customer onboarding, Account opening and Cheque Book Issuance process which were running manually and was document intensive in nature, which caused lot of delays in processing and left negative impact of customer experience.",
-    src: "https://ik.imagekit.io/wjx8terl3/k-study/primeBankBulding.webp?updatedAt=1753703729817",
-    bgImages:
-      "url('https://ik.imagekit.io/wjx8terl3/k-study/primeBankBulding.webp?updatedAt=1753703729817')",
-
-    target: "Read More",
-    //
-
-    kStudy: [
-      {
-        title: "Prime Bank",
-        logoImage: "/images/k-study/prime_bank_africa_logo.webp",
-        logoImageAA: "/images/k-study/pinmeA.webp",
-        description:
-          "Prime Bank wanted to automate customer onboarding, Account opening and Cheque Book Issuance process which were running manually and was document intensive in nature",
-        problemStatementText:
-          "Prime Bank wanted to automate customer onboarding, Account opening and Cheque Book Issuance process which were running manually and was document intensive in nature, which caused lot of delays in processing and left negative impact of customer experience.",
-        projectDetailsText:
-          "BPAAS Solutions delivered Customer Onboarding Portal along with automation of Account Opening and Cheque Book Issuance process on Newgen’s Low Code platform. With IBPS core functionality to design process flow along with business rule engine and BAM reporting, Prime Bank was quick able to transform the complete process from manual to system driven, reducing TAT and increasing customer experience",
-        keyAchievementText: (
-          <div>
-            <li>
-              Standardize and automate processes across Account Opening, Cheque
-              Book Issuance
-            </li>
-            <li>Enhance Customer Experience</li>
-            <li>Automation Manual Activities and Integration with CBS</li>
-          </div>
-        ),
-        stareNumber: 7.9,
-        stars: (
-          <div className="flex items-center justify-center w-full ">
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <MdOutlineStarBorder className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-          </div>
-        ),
-        LUp: 21,
-        LDown: 21,
-      },
-    ],
-  },
-  {
-    id: 3,
-    name: "Workflow Automation For Experion Developers",
-    quote:
-      "Axalta Coating Systems is a US based MNC that develops and manufactures coatings for vehicles, industrial, and refinish applications.",
-    src: "/images/k-study/News-Article-Cover-Images-2024-05-16T104444.933.webp",
-    bgImages:
-      "url('/images/k-study/News-Article-Cover-Images-2024-05-16T104444.933.webp')",
-    target: "Read More",
-    //
-    kStudy: [
-      {
-        title: "Experion",
-        logoImage: "/images/k-study/experioninsodelogo.webp",
-        logoImageAA: "/images/k-study/experionA.webp",
-        description:
-          "Emerald Law Offices advises Experion Developers on Real Estate Project acquisition in India",
-        problemStatementText:
-          "Experion Developers wanted a Note For Approval system to manage the entire capex, projects, infrastructure related approvals which can be managed on a system for faster approvals and easy tracking of notes/files.",
-        projectDetailsText:
-          "Successfully implemented a Note for Approval (NFA) ISV Solution, providing comprehensive functionality to manage all types of NFAs, including approval hierarchies, Delegation of Authority (DOA), and document attachment and sharing capabilities. The solution featured multiple initiation channels and seamless integration with Newgen “OmniDocs” Document Management System (DMS), Active Directory, and the email server.",
-        keyAchievementText: (
-          <div>
-            <li>Standardize and automate processes</li>
-            <li>Enhance internal User Experience</li>
-            <li>Faster Approval, Easy Tracking and Delegation of Work</li>
-            <li>Single window solution for entire organization</li>
-          </div>
-        ),
-        stareNumber: 21,
-        stars: (
-          <div className="flex items-center justify-center w-full ">
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <MdOutlineStarBorder className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-          </div>
-        ),
-        LUp: 21,
-        LDown: 21,
-      },
-    ],
-  },
-  {
-    id: 4,
-    name: "Intelligent Document Processing(IDP) For Hindware",
-    quote:
-      "Hindware was looking to automate their several business processes which were document centric in nature and required lots of time for doing manual data entries from documents into ERP & other applications. This caused lot of delays in finance, procurement, and taxation related process as the number of document where huge.",
-    src: "https://ik.imagekit.io/wjx8terl3/k-study/himndware.webp?updatedAt=1753703721898",
-    bgImages:
-      "url('https://ik.imagekit.io/wjx8terl3/k-study/himndware.webp?updatedAt=1753703721898')",
-    target: "Read More",
-    //
-    kStudy: [
-      {
-        title: "Hindware",
-        logoImage: "/images/k-study/Hindware-logo-brand-page.webp",
-        logoImageAA: "/images/k-study/hindwareA.webp",
-        description:
-          "Hindware Limited is a prominent Indian building products company known for its sanitaryware, bathware, and kitchen appliances",
-        problemStatementText:
-          "Hindware was looking to automate their several business processes which were document centric in nature and required lots of time for doing manual data entries from documents into ERP & other applications. This caused lot of delays in finance, procurement, and taxation related process as the number of document where huge.",
-        projectDetailsText:
-          "BPAAS successfully implemented the MetaEx- IDP solution for Hindware which became central engine to process and extract the relevant data from documents like Invoice, PO, Airline Bills, Bill of enteries, electricity bills etc. Using the IDP Solution, User were able to prevent lot of time during process like invoice processing, vendor onboarding, BOE process etc which increased the user experience.",
-        keyAchievementText: (
-          <div>
-            <li>Reduction in Manual Processing</li>
-            <li>Improved time and SLA to do processing in ERP</li>
-            <li>Ease of business user.</li>
-          </div>
-        ),
-        stareNumber: 21,
-        stars: (
-          <div className="flex items-center justify-center w-full ">
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <MdOutlineStarBorder className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-          </div>
-        ),
-        LUp: 21,
-        LDown: 21,
-      },
-    ],
-  },
-  {
-    id: 5,
-    name: "Workflow Automation at HMSI",
-    quote:
-      "The primary objective of this project is to develop Progressive Web Application (PWA) mobile app using Oracle APEX. This innovative solution was crafted to streamline the approval process for service requests initiated through our existing .NET application.",
-    src: "https://ik.imagekit.io/wjx8terl3/k-study/manufacturing.webp?updatedAt=1753703725907",
-    bgImages:
-      "url('https://ik.imagekit.io/wjx8terl3/k-study/manufacturing.webp?updatedAt=1753703725907')",
-    target: "Read More",
-    //
-    kStudy: [
-      {
-        title: "HMSI",
-        logoImage: "/images/k-study/Logo-Honda.webp",
-        logoImageAA: "/images/k-study/hondaA.webp",
-        description:
-          "Honda is a prominent Japanese multinational conglomerate best known for its manufacturing of automobiles, motorcycles, and power equipment.",
-        problemStatementText:
-          "The primary objective of this project is to develop Progressive Web Application (PWA) mobile app using Oracle APEX. This innovative solution was crafted to streamline the approval process for service requests initiated through our existing .NET application.",
-        projectDetailsText:
-          "HMSI was using a .NET application that had limited accessibility beyond the premises of HMSI. This posed a significant challenge for employees working remotely or traveling, as they were unable to access the application. As a result, there were delays in approving requests, impacting operational efficiency.",
-        keyAchievementText: (
-          <div>
-            <li>
-              Development of a Progressive Web Application (PWA) Mobile App
-              using Oracle APEX to streamline 24 internal processes. Each
-              process entails a sophisticated 9-level approval workflow.
-            </li>
-            <li>
-              Integrated with existing .NET application, serving as the platform
-              from which users initiate service requests. Additionally,{" "}
-            </li>
-            <li>
-              LDAP integration to facilitate user logins, ensuring secure
-              access.
-            </li>
-            <li>
-              A user-specific dashboard provides a comprehensive overview,
-              showcasing Pending Approvals, Approved, and Rejected requests.
-            </li>
-            <li>
-              Incorporated Email and Push notification integration, enabling
-              automated reminders to stakeholders.
-            </li>
-          </div>
-        ),
-        stareNumber: 21,
-        stars: (
-          <div className="flex items-center justify-center w-full ">
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <MdOutlineStarBorder className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-          </div>
-        ),
-        LUp: 21,
-        LDown: 21,
-      },
-    ],
-  },
-];
-
-export const ServiceImplementationDataAndAllCases: Testimonial[] = [
-  {
-    id: 6,
-    name: "Invoice Processing For Rubamin",
-    quote:
-      "Rubamin was looking to automate their vendor invoices for PO, Non PO, Export, Import and Travel invoices which they use to receive from multiple channels. Without effective automation the entire process was manual and took lot of time for approvals, 3-way matches, and validations before payments can be released.",
-    src: "/images/k-study/rubin.webp",
-    bgImages: "url('/images/k-study/rubin.webp')",
-    target: "Read More",
-    //
-    kStudy: [
-      {
-        title: "Rubamin",
-        logoImage: "/images/k-study/robmaimB.webp",
-        logoImageAA: "/images/k-study/rubaminA.webp",
-        description:
-          "a global leader in the sustainable and circular recycling of critical metals, with a strong focus on recovering valuable metals from industrial waste ",
-        problemStatementText:
-          "Rubamin was looking to automate their vendor invoices for PO, Non PO, Export, Import and Travel invoices which they use to receive from multiple channels. Without effective automation the entire process was manual and took lot of time for approvals, 3-way matches, and validations before payments can be released.",
-        projectDetailsText:
-          "BPAAS delivered Invoice Processing Automation solution to automate the complete GRN and 2 way and 3-way Match process along with handling all automated validation and approvals in System. The system was integrated with SAP ERP and Image Enablement features was delivered to give ease to business users. The Solution reduce significant TAT for the end users and ease day to day operations",
-        keyAchievementText: (
-          <div>
-            <li>End to End Automation of vendor Invoices</li>
-            <li>
-              Significant reduction in TAT and Ease of operation to business
-            </li>
-            <li>Automation of PO, Non PO, GRN and Invoice Payments</li>
-            <li>Image Enablement with SAP ERP</li>
-          </div>
-        ),
-        stareNumber: 7.9,
-        stars: (
-          <div className="flex items-center justify-center w-full ">
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <MdOutlineStarBorder className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-          </div>
-        ),
-        LUp: 21,
-        LDown: 21,
-      },
-    ],
-  },
-  {
-    id: 7,
-    name: "Accounts Payable For Wonder Cement",
-    quote:
-      "Wonder Cement was looking to automate their vendor invoices which they used to receive from multiple channels. The manual process caused delays in approvals and validations before payments.",
-    src: "/images/k-study/wonderOficeImages.webp",
-    bgImages: "url('/images/k-study/wonderOficeImages.webp')",
-    target: "Read More",
-    kStudy: [
-      {
-        title: "Wonder Cement",
-        logoImage: "/images/k-study/4imageWonder.webp", // Replace with actual logo if available
-        logoImageAA: "/images/k-study/wonderA.webp", // Replace with actual logo if available
-        description:
-          "Wonder Cement aimed to automate vendor invoice processing to reduce manual efforts and improve efficiency.",
-        problemStatementText:
-          "Wonder Cement was looking to automate their vendor invoices which they use to receive from multiple channels. Without effective automation the entire process was manual and took lot of time for approvals, 3-way matches, and validations before payments can be released.",
-        projectDetailsText:
-          "BPAAS delivered Newgen Accounts Payable Automation solution with OmniXtract, IBPS, and OmniDocs to automate the complete GRN and 3-way Match process along with handling all validation and approvals in System. The system was integrated with MS Dynamics and Image Enablement Features was delivered to give ease to business users.",
-        keyAchievementText: (
-          <div>
-            <li>Standardize and automate processes across Payables</li>
-            <li>Enhance user and vendor experience</li>
-            <li>Automation of PO, Non PO, GRN and Invoice Payments</li>
-            <li>Image Enablement with MS Dynamics</li>
-          </div>
-        ),
-        stareNumber: 8.3,
-        stars: (
-          <div className="flex items-center justify-center w-full ">
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <MdOutlineStarBorder className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-          </div>
-        ),
-        LUp: 0,
-        LDown: 0,
-      },
-    ],
-  },
-  {
-    id: 8,
-    name: "MDM Creation & Update at AIS Glass",
-    quote:
-      "AIS Glass faced challenges in manually creating and updating master data for vendors and customers. Lack of real-time visibility impacted finance and procurement operations.",
-    src: "/images/k-study/Asahi-India-Glass-Ltd.webp", // Replace with actual image path if available
-    bgImages: "url('/images/k-study/Asahi-India-Glass-Ltd.webp')",
-    target: "Read More",
-    kStudy: [
-      {
-        title: "AIS Glass",
-        logoImage: "/images/k-study/imagesbig4.webp", // Replace with actual logo path
-        logoImageAA: "/images/k-study/imagesbig4.webp", // Replace with actual logo path
-        description:
-          "AIS Glass needed an automated solution to manage their vendor and customer MDM workflows integrated with Oracle ERP.",
-        problemStatementText:
-          "Due to the large number of vendors, dealers, and distributors, AIS Glass had frequent changes in their master data which used to happen due to different business scenarios. And manually creation and updation of master data was a difficult and tricky task for the backend team in Oracle ERP. Without real-time visibility of who, when, and what is approved for MDM creation and updation, it posted challenge in smooth operations and impacted performance of AIS finance and procurement team.",
-        projectDetailsText:
-          "The BPAAS team implemented the MDM creation and updation using Newgen’s low Code Application platform to design the complete workflow for creation and updation of vendor and customer MDM. With Newgen workflow and business rules capabilities, BPAAS team quickly defined business rules and workflow routing mechanism for tracking and approving the MDM’s and pushing the MDM changes directly into the Oracle ERP.",
-        keyAchievementText: (
-          <div>
-            <li>Proper Tracking of MDM Changes and Updates</li>
-            <li>Real-time visibility of vendor and customer MDMs</li>
-            <li>Faster approvals and routing to improve accuracy</li>
-            <li>Reduction in PO & SO errors to increase efficiency</li>
-          </div>
-        ),
-        stareNumber: 8.1,
-        stars: (
-          <div className="flex items-center justify-center w-full ">
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <MdOutlineStarBorder className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-          </div>
-        ),
-        LUp: 0,
-        LDown: 0,
-      },
-    ],
-  },
-  {
-    id: 9,
-    name: "Invoice Processing Using OCR For ACG Pharma",
-    quote:
-      "ACG Pharma aimed to automate vendor invoice processing and reduce human intervention using OCR and achieve high levels of straight-through processing.",
-    src: "/images/k-study/acg_unit-11168.webp", // Replace with real image path if available
-    bgImages: "url('/images/k-study/acg_unit-11168.webp')",
-    target: "Read More",
-    kStudy: [
-      {
-        title: "ACG Pharma",
-        logoImage: "/images/k-study/acg_world_logo4.webp", // Replace with real logo path
-        logoImageAA: "/images/k-study/acgA.webp", // Replace with real logo path
-        description:
-          "ACG Pharma is a global player in the pharmaceutical industry seeking OCR-based automation for vendor invoice processing.",
-        problemStatementText:
-          "ACG Pharma is global player in pharma industry which was to transform their vendor invoice processing through automation and reduce human intervention into the process of Invoices. ACG Pharma has maximum PO based invoice goods invoices and rest with invoice where services which took too much time in ERP to process due to several business scenarios.",
-        projectDetailsText:
-          "BPAAS delivered Accounts Payable Automation solution with BPAAS MetaEx for data extraction from invoices. With high level of accuracy from invoices and the handling of various business scenarios like 2 way and 3 way match with PO, GRN and invoice, BPAAS was able to deliver 90% of straight through processing of vendor invoices. The system was integrated with SAP ERP and Image Enablement Features was delivered to give ease to business users.",
-        keyAchievementText: (
-          <div>
-            <li>90% and above accuracy from invoices using BPAAS MetaEx</li>
-            <li>High level of straight-through processing (STP)</li>
-            <li>End-to-end automation with minimal manual intervention</li>
-          </div>
-        ),
-        stareNumber: 8.5,
-        stars: (
-          <div className="flex items-center justify-center w-full ">
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <MdOutlineStarBorder className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-          </div>
-        ),
-        LUp: 0,
-        LDown: 0,
-      },
-    ],
-  },
-  {
-    id: 10,
-    name: "Vendor Portal For Ecom Express",
-    quote:
-      "Ecom Express faced challenges managing vendor relationships due to lack of a dedicated portal, causing communication gaps and inefficiencies.",
-    src: "/images/k-study/ECOM-Express.webp", // Replace with real image if you have
-    bgImages: "url('/images/k-study/ECOM-Express.webp')",
-    target: "Read More",
-    kStudy: [
-      {
-        title: "Ecom Express",
-        logoImage: "/images/k-study/ecomBB.webp", // Replace with real logo if you have
-        logoImageAA: "/images/k-study/ecomeLogSSS.webp", // Replace with real logo if you have
-        description:
-          "Ecom Express needed a dedicated vendor portal to streamline onboarding, improve transparency, and enhance vendor communication.",
-        problemStatementText:
-          "Ecom Express was facing significant challenges in efficiently managing vendor relationships without a dedicated vendor portal. Due to this, it caused inefficient communication, slow onboarding of new vendors, lack of visibility of services and frequent disputes related to payments between Ecom and its vendors.",
-        projectDetailsText:
-          "BPAAS Solutions implemented an end-to-end vendor portal solution which took care of their manual and slow vendor onboarding process along with delivering a dedicated portal for them to view, accept their PO and submit invoices from the portal itself which delivered transparency and agility to vendors in their operations. With Vendor portal, now vendors can easily track their invoices and raise/respond to queries without any loss of information.",
-        keyAchievementText: (
-          <div>
-            <li>Strengthen Vendor Relationship</li>
-            <li>Improved Communication & Efficiency</li>
-            <li>Automation of activities and Cost Saving</li>
-            <li>Compliance and Risk Management</li>
-          </div>
-        ),
-        stareNumber: 8.2,
-        stars: (
-          <div className="flex items-center justify-center w-full ">
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <MdOutlineStarBorder className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-          </div>
-        ),
-        LUp: 0,
-        LDown: 0,
-      },
-    ],
-  },
-  {
-    id: 11,
-    name: "Upgrade & Migration for Ageas Federal",
-    quote:
-      "Ageas Federal needed to upgrade its legacy Newgen IBPS & OmniDocs to improve performance, enable new features, and eliminate inefficiencies.",
-    src: "/images/k-study/ageas.webp", // Replace with real image if available
-    bgImages: "url('/images/k-study/ageas.webp')",
-    target: "Read More",
-    kStudy: [
-      {
-        title: "Ageas Federal",
-        logoImage: "/images/k-study/ageasAAA.webp", // Replace with real logo
-        logoImageAA: "/images/k-study/ageasA.webp", // Replace with real logo
-        description:
-          "Ageas Federal required a comprehensive upgrade of their Newgen platforms to meet modern business demands.",
-        problemStatementText:
-          "Ageas Federal faced challenges with outdated versions of Newgen IBPS and OmniDocs, resulting in inefficiencies, limited functionality, and difficulty in aligning with evolving business requirements. The organization required a comprehensive upgrade and migration solution to enhance system performance, ensure compatibility with new technologies, and improve operational workflows.",
-        projectDetailsText:
-          "BPAAS Solutions upgraded both platforms to their latest versions to leverage enhanced functionalities, improved security, and compatibility with modern technologies. Implemented necessary patches and updates to ensure seamless integration with existing IT infrastructure and applications. Migration of existing data from older version along with migration of Retail Policy Issuance process from earlier version of IBPS to latest version without loss of any data or loss of performance.",
-        keyAchievementText: (
-          <div>
-            <li>Optimized system performance for IBPS and OmniDocs</li>
-            <li>Improved user and customer experience</li>
-            <li>Seamless data migration with zero loss</li>
-            <li>Enhanced automation of manual activities</li>
-          </div>
-        ),
-        stareNumber: 8.4,
-        stars: (
-          <div className="flex items-center justify-center w-full ">
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <MdOutlineStarBorder className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-          </div>
-        ),
-        LUp: 0,
-        LDown: 0,
-      },
-    ],
-  },
-  {
-    id: 12,
-    name: "P2P Platform For Panasonic",
-    quote:
-      "Panasonic Life Solutions aimed to streamline their entire Procure-to-Pay (P2P) cycle, eliminate delays, and integrate with multiple third-party systems including SAP.",
-    src: "/images/k-study/Panasonic-logo-at-its-main-office.webp", // Replace with actual image if available
-    bgImages: "url('/images/k-study/Panasonic-logo-at-its-main-office.webp')",
-    target: "Read More",
-    kStudy: [
-      {
-        title: "Panasonic Life Solutions",
-        logoImage: "/images/k-study/panasonic.webp", // Replace with real logo if available
-        logoImageAA: "/images/k-study/lgolaaa.webp", // Replace with real logo if available
-        description:
-          "Panasonic Life Solution was struggling with their entire P2P operations due to a scattered and inefficient system landscape.",
-        problemStatementText:
-          "Panasonic Life Solution was struggling with the entire value chain of Procure to Pay where they had complex and long vendor onboarding, Purchase Indent and Approval Process which was scattered across multiple standalone systems. This lack of centralized tracking impacted operations across departments and factories due to delayed procurement and strained vendor relations.",
-        projectDetailsText:
-          "BPAAS team proposed a 3-phase solution for implementing a single P2P Platform for Panasonic. This took care of their entire Purchase Indent Process, Vendor Onboarding Process, integrated with PO Approvals system and Payment process, along with connecting several third-party applications including SAP ERP. The new platform enabled centralized tracking, faster operations, and greater process transparency.",
-        keyAchievementText: (
-          <div>
-            <li>Single unified P2P platform across 29 business departments</li>
-            <li>
-              Standardization and automation of Purchase and Onboarding
-              Processes
-            </li>
-            <li>Faster TAT and streamlined procurement operations</li>
-            <li>Integration with SAP and third-party applications</li>
-          </div>
-        ),
-        stareNumber: 8.6,
-        stars: (
-          <div className="flex items-center justify-center w-full ">
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <MdOutlineStarBorder className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-          </div>
-        ),
-        LUp: 0,
-        LDown: 0,
-      },
-    ],
-  },
-  {
-    id: 13,
-    name: "Workflow and MDM Solution For Usha",
-    quote:
-      "Usha Appliances wanted to upgrade their workflow system for better performance, user experience, and automation of Customer, Vendor, and Material Master processes.",
-    src: "/images/k-study/usahOfice.webp", // Replace with real image path
-    bgImages: "url('/images/k-study/usahOfice.webp')",
-    target: "Read More",
-    kStudy: [
-      {
-        title: "Usha Appliances",
-        logoImage: "/images/k-study/usha-fan.webp", // Replace with actual logo
-        logoImageAA: "/images/k-study/ushaA.webp", // Replace with actual logo
-        description:
-          "Usha aimed to implement a centralized workflow system to manage all master data and improve UI/UX across departments.",
-        problemStatementText:
-          "Usha Appliances was looking to replace their existing workflow platform with a new workflow automation solution for improved performance, UI, and functionality for automating their Customer, Vendor, Pricing, Customer Credit and Material Master Processes.",
-        projectDetailsText:
-          "BPAAS Implemented the end-to-end workflow solution for automating their customer code creation, vendor code creation/extension and updation process along with delivering various validations like integration with Govt Database for real-time validation of details submitted by Vendor and Customer. Alerts, notifications, and an improved UI ensured excellent user experience across CO, Factory, and Warehouses.",
-        keyAchievementText: (
-          <div>
-            <li>Centralized workflow for Customer, Vendor & Material Master</li>
-            <li>Integration with Govt database for real-time validation</li>
-            <li>Improved turnaround time and compliance</li>
-            <li>Enhanced user interface and experience</li>
-          </div>
-        ),
-        stareNumber: 8.4,
-        stars: (
-          <div className="flex items-center justify-center w-full ">
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <MdOutlineStarBorder className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-          </div>
-        ),
-        LUp: 0,
-        LDown: 0,
-      },
-    ],
-  },
-  {
-    id: 14,
-    name: "Python Based RPA Bot For Rubamin",
-    quote:
-      "Rubamin wanted to automate its finance reconciliation process using RPA to reduce delays and manual effort.",
-    src: "/images/k-study/rubin.webp", // Replace with real image path if available
-    bgImages: "url('/images/k-study/rubin.webp')",
-    target: "Read More",
-    kStudy: [
-      {
-        title: "Rubamin (RPA Bot)",
-        logoImage: "/images/k-study/robmaimB.webp", // Replace with actual logo path
-        logoImageAA: "/images/k-study/rubaminA.webp", // Replace with actual logo path
-        description:
-          "Rubamin aimed to reduce manual work in finance reconciliation using Python-based RPA bots.",
-        problemStatementText:
-          "Rubamin was looking to automate its finance process using the RPA bot which could reduce human intervention. The process was slow and took 3-5 days for invoice reconciliation, which impacted their efficiencies and caused operational delays.",
-        projectDetailsText:
-          "BPAAS Solutions implemented the Python-based RPA bot at Rubamin for their invoice reconciliation process. The Bot was configured with various business logics, rules, and exception-handling scenarios to manage different types of transactions and seamlessly post them into the SAP ERP. It also sent reports and notifications post completion of tasks.",
-        keyAchievementText: (
-          <div>
-            <li>Faster processing of invoice reconciliation</li>
-            <li>Reduction in manual processing</li>
-            <li>Improved SLA and turnaround time in ERP</li>
-            <li>Ease of use and automated reporting</li>
-          </div>
-        ),
-        stareNumber: 8.3,
-        stars: (
-          <div className="flex items-center justify-center w-full ">
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <MdOutlineStarBorder className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-          </div>
-        ),
-        LUp: 0,
-        LDown: 0,
-      },
-    ],
-  },
-  {
-    id: 15,
-    name: "Incident Automation For Air Water India",
-    quote:
-      "Air Water India needed to automate its incident reporting and RCA processes to reduce delays, improve analysis, and enable data-driven decisions.",
-    src: "/images/k-study/airwater.webp", // Replace with real image if available
-    bgImages: "url('/images/k-study/airwater.webp')",
-    target: "Read More",
-    kStudy: [
-      {
-        title: "Air Water India",
-        logoImage: "/images/k-study/logossdf.webp", // Replace with actual logo if available
-        logoImageAA: "/images/k-study/airA.webp", // Replace with actual logo if available
-        description:
-          "Air Water India aimed to digitize their manual incident reporting and RCA (Root Cause Analysis) process for improved accountability and analysis.",
-        problemStatementText:
-          "Air Water India was managing the RCA (Root Cause Analysis) process manually, which made it time-consuming. Teams struggled to gather comprehensive data sets including logs, metrics, user feedback, and historical records, making it hard to uncover critical insights and resolve recurring issues.",
-        projectDetailsText:
-          "BPAAS designed and developed a robust portal on Oracle APEX to automate the RCA process for 8 different incident scenarios. The system included dynamic approval workflows, RCA stage tracking, customizable reporting, and feedback mechanisms to gather insights and ensure follow-up actions. It allowed stakeholders to generate detailed RCA reports and ensured transparency and accountability.",
-        keyAchievementText: (
-          <div>
-            <li>Automation of 8 RCA incident types with dynamic workflows</li>
-            <li>Full-stage tracking from issue detection to resolution</li>
-            <li>Customizable RCA reports for stakeholders</li>
-            <li>Stakeholder feedback system for continuous improvement</li>
-          </div>
-        ),
-        stareNumber: 8.6,
-        stars: (
-          <div className="flex items-center justify-center w-full ">
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <IoMdStar className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-            <MdOutlineStarBorder className="text-amber-400 text-2xl hover:scale-150 transition-all duration-150 ease-in" />
-          </div>
-        ),
-        LUp: 0,
-        LDown: 0,
-      },
-    ],
-  },
-];
 
 export const CardData: CardItem[] = [
   {
@@ -682,7 +6,6 @@ export const CardData: CardItem[] = [
     id: "pagenumber1",
     image:
       "https://ik.imagekit.io/wjx8terl3/solutions-images/invoice.mp4?updatedAt=1753683171278",
-    // image: "/images/solutions-images/invoice.mp4",
     modalImages: [
       "/images/modalimage1.webp",
       "/images/modalimage2.webp",
@@ -690,7 +13,6 @@ export const CardData: CardItem[] = [
       "/images/modalimage2.webp",
     ],
     isVideo: true,
-    // icon: <FaShoppingCart className="my-6 text-5xl md:text-7xl" />,
     icon: "/images/icons/PBGEMD System.webp",
     description:
       "ARIA – Your Context-Aware AI Assistant for Fast, Human-like Interaction Across All Platforms.",
@@ -777,7 +99,6 @@ export const CardData: CardItem[] = [
       "/images/services-images/mrpl3.png",
     ],
     isVideo: false,
-    // icon: <FaUserTie className="my-6 text-5xl md:text-7xl" />,
     icon: "/images/icons/Vendor Portal.webp",
     description:
       "End-to-End Vendor Lifecycle Management — Onboard, Approve, and Manage Vendors Seamlessly with Intelligent Automation.",
@@ -879,14 +200,12 @@ export const CardData: CardItem[] = [
     title: "MetaEx",
     id: "pagenumber2",
     image: "https://ik.imagekit.io/wjx8terl3/solutions-images/hud%20futuristic%20animation%20-AI%20generation.mp4?updatedAt=1756794381108",
-    // image: "/images/solutions-images/metaEx.webp",
     modalImages: [
       "/images/services-images/hindware1.png",
       "/images/services-images/hindware2.png",
       "/images/services-images/hindware3.png",
     ],
     isVideo: true,
-    // icon: <FaProjectDiagram className="my-6 text-5xl md:text-7xl" />,
     icon: "/images/icons/Meta Ex.webp",
     description:
       "MetaEx – Decode Documents at the Speed of AI. Automate data extraction with unmatched accuracy, scale, and speed.",
@@ -992,7 +311,6 @@ export const CardData: CardItem[] = [
       "https://ik.imagekit.io/wjx8terl3/solutions-images/image%20(5).png?updatedAt=1756794999770",
     ],
     isVideo: false,
-    // icon: <FaFileInvoiceDollar className="my-6 text-5xl md:text-7xl" />,
     icon: "/images/icons/Account Payable.webp",
     description:
       "From Invoice to Payment—Smarter, Faster, Paperless. Reimagine Accounts Payable with Automation.",
@@ -1101,13 +419,11 @@ export const CardData: CardItem[] = [
     id: "pagenumber5",
     image:
       "https://ik.imagekit.io/hnooxnfml/download%20(1)%20(1).png?updatedAt=1755860452105",
-    // image: "/images/solutions-images/note.webp",
     modalImages: [
       "/images/services-images/ussa1.png",
       "/images/services-images/ussa2.png",
     ],
     isVideo: false,
-    // icon: <FaClipboardCheck className="my-6 text-5xl md:text-7xl" />,
     icon: "/images/icons/Note For Approval.webp",
     description:
       "Clean Data. Clear Decisions. Confident Growth. Unify your vendor and customer master for smarter processes and stronger relationships.",
@@ -1221,13 +537,11 @@ export const CardData: CardItem[] = [
     id: "pagenumber6",
     image:
       "https://ik.imagekit.io/wjx8terl3/solutions-images/meetting.mp4?updatedAt=1753683166367",
-    // image: "/images/solutions-images/meetting.mp4",
     modalImages: [
       "/images/services-images/yoko3.png",
       "/images/services-images/yoko1.png",
     ],
     isVideo: true,
-    // icon: <FaUsers className="my-6 text-5xl md:text-7xl" />,
     icon: "/images/icons/Committee Meeting.webp",
     description:
       "Smart Approvals. Stronger Control. Digitize Capex & Opex Approvals for Governance and Speed.",
@@ -1337,7 +651,6 @@ export const CardData: CardItem[] = [
     title: "Master Data Management – Material & Item",
     id: "pagenumber7",
     image: "https://ik.imagekit.io/wjx8terl3/solutions-images/_%20Ready%20to%20reclaim%20your%20time%20and%20boost%20your%20productivity_%20__At%20EcoTek%20Social,%20we%20believe%20that%20automation%20is%20the%20secret%20sauce%20to%20working%20smarter,%20not%20harder!%20_%E2%9C%A8%20Imagine%20having%20an%20AI%20assistant%20that%20handles%20all%20tho.jpeg?updatedAt=1756812647168",
-    // image: "/images/solutions-images/vendorOnboarding.webp",
     modalImages: [
       "/images/services-images/merino1.png",
       "/images/services-images/merino2.png",
@@ -1345,7 +658,6 @@ export const CardData: CardItem[] = [
       "/images/services-images/merino4.png",
     ],
     isVideo: false,
-    // icon: <FaFlask className="my-6 text-5xl md:text-7xl" />,
     icon: "/images/icons/New Product Development.webp",
     description:
       "Standardize Your Material & Item Data. Eliminate Duplicates. Power Operational Accuracy Across Systems.",
