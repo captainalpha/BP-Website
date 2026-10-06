@@ -159,14 +159,24 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="mt-12 border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between  text-sm text-gray-500">
+      <div className="mt-12 border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-sm text-gray-500">
         <p>© 2025 BPAAS Solutions Pvt. Ltd. | All Rights Reserved</p>
-        <Link
-          href={Routes.PRIVACY_POLICY}
-          className="hover:text-white mt-2 whitespace-normal text-[#ec974c8f] md:text-gray-500"
-        >
-          Privacy Policy
-        </Link>
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
+          <Link
+            href="https://forms.cloud.microsoft/r/AW56egXMxu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-[#ec964c] text-white px-4 py-2 rounded hover:bg-[#ff7700f3] transition-all duration-150 ease-in-out"
+          >
+            Report an Issue
+          </Link>
+          <Link
+            href={Routes.PRIVACY_POLICY}
+            className="hover:text-white whitespace-normal text-[#ec974c8f] md:text-gray-500"
+          >
+            Privacy Policy
+          </Link>
+        </div>
       </div>
     </footer>
   );
